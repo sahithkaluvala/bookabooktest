@@ -1,0 +1,76 @@
+
+.leftbar{
+    float:left;
+    padding-right:50px;
+    padding-left:50px;
+    height:500px;
+    
+
+}
+
+.book1{
+    height:400px;
+    width:300px;
+    
+}
+*.block {
+    display: block;
+    width: 15%;
+    border: none;
+    background-color: #4CAF50;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    
+  } 
+
+  .mainpart{
+    display:block;
+    width: 1200px;
+  }
+
+  #wrapper{
+      margin-top: 25px;
+      background-color:white;
+      
+  }
+
+  .font1{
+      font-weight: bold;
+    font-size: 20px;
+   
+  }
+
+
+  
+@media screen and (max-width: 900px) {
+
+
+/* adjusting size according to screen size*/
+
+#wrapper
+{
+  padding-top:50px;
+  padding-right:900px;
+   margin-top: 25px;
+    }
+   
+.leftbar{
+  padding-right:50px;
+  height:500px;
+  
+
+}
+
+.book1{
+  height:200px;
+  width:100px;
+  
+}
+
+ 
+
+}
+

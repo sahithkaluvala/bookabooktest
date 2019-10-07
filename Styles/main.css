@@ -1,179 +1,267 @@
-     body{
-       max-width: 1000px;
-   }
-   header{
-        background: linear-gradient(to right,white,white,#fdaf48); 
-        width: 1336px
-    }
+body{
+    max-width: 1500px;
+    min-height: 700px;
+    margin: 5px;
+}
 
-    #login{
-        float: right;
-        display: block;
-        text-transform: initial;
-        font-size: 20px;        
-        font-weight: bold;
-        text-decoration: none;
-        font-family: 'PT Sans', sans-serif;
-        margin-top: 25px;
-        margin-right:40px;
-        color:black;
+header{
+    width:1255px;
+    height: 100px;
+    background: linear-gradient(to right,white,white,#fdaf48); 
+    
+}
+#login{
+    float: right;
+    display: block;
+    text-transform: initial;
+    font-size: 20px;        
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 35px;
+    margin-right:40px;
+    color:black;
+}
+
+#menubar{
+    background: black;
+    max-width: 1255px;;
+    height: 60px;
+}
+/*
+#menubar ul{
+    
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    align-content:space-around;
+    align-self: center;
+}
+*/
+
+#login:hover{
+    color: white;
+}
         
-    }
 
-    #login:hover{
-        color: white;
-    }
-            
-   
-    #menubar ul{
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     background-color: black;
-     
-    }
-    #menubar{
-        width:2000px;
-    }
+#menubar ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ background-color: black;
+ 
+}
+#menubar{
+    width:2000px;
+}
+
+#menubar ul li{
+    float:left;
+    padding: 2px;
+    text-align: center;
+    background-color: black ;
+    padding-right:110px;
+
+}
+
+#menubar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: initial;
+    color: white;
+    font-size: 15px;
+    padding: 13.5px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+#menubar ul li a:hover{
+    color: white;
+    background: linear-gradient(#fbaa3f,#eb8c10)
+}
+
+#searchbox form input{
+    margin-top:15px;
+    width: 205px;    
+}
+
+#searchbox form button{
+ margin-top:15px;
+ margin-left: 20px;
+ font-size: 10px;
+ font-weight: bold; 
+ font-family: 'PT Sans', sans-serif;
+ width: 75px;
+ height: 20px;
+ float: right;
+
+}
+
+main{
+    background: url(/images/background.jpg);
     
-    #menubar ul li{
-        float:left;
-        padding: 2px;
-        text-align: center;
-        background-color: black ;
-        padding-right:110px;
+    width:1255px;;
+    height: 850px;
+}
 
+#main_img{
+    width:900px;
+    height:400px;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px white;
+}
+
+
+
+#about_bookabook{
+    background-color: aliceblue;
+    width:500px;
+    float: left;
+    margin-left: 10px;
+    border-radius: 10px;
+    float: left;
+    padding:15px;
+    text-align: center;
+    margin-top:90px;    
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about_bookabook h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
     }
 
-    #menubar ul li a{
-        text-decoration: none;
-        display: inline-block;
-        text-transform: initial;
-        color: white;
-        font-size: 15px;
-        padding: 13.5px;
-        font-family: 'PT Sans', sans-serif;
-        font-weight: bold;
-    }
-    #menubar ul li a:hover{
-        color: white;
-        background: linear-gradient(#fbaa3f,#eb8c10)
-    }
-    #searchbox {
+#features h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
 
-        width: 410px;
-        height: 46px;
-        font-size: 10px;
-    }
+
+#features{
     
-    #searchbox form input{
-        margin-top:10px;
-        width: 205px;
-    }
+    padding:15px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 90px;
+    margin-right: 20px;
+    padding: 10px;
+    float: right;
+    background-color: aliceblue;
+    width:550px;
+    border-radius: 10px;
+    margin-right: 80px;
+}
 
-    #searchbox form button{
-     margin-top:10px;
-     font-size: 10px;
-     font-weight: bold; 
-     font-family: 'PT Sans', sans-serif;
-     width: 75px;
-     height: 20px;
-     float: right;
 
-    }
-    #banner{
-        margin-top:60px;
-        text-align: center;
-        width:250px;
-        height: 20px;
 
-        font-family: 'PT Sans', sans-serif;
-        background: #eb8c10;
-        color: black;
-    }
-    main{        
-    height: 700px;
-    width:1335px;
-    margin-top: 100px;
-    background-image: url(../images/background.jpg);     
-    }
-
-    #about_bookabook{
-        background-color: aliceblue;
-        width:500px;
-        float: left;
-        margin-left: 100px;
-        border-radius: 10px;
-        float: left;
-        padding: 25px;
-        text-align: center;
-        margin-top:90px;
-        
-        font-family: 'PT Sans', sans-serif;
-    }
-    #about_bookabook h2{
-        font-family: 'PT Sans', sans-serif;
-        font-weight: bold;
-  
-    }
-
-    #features h2{
-        font-family: 'PT Sans', sans-serif;
-        font-weight: bold;
-        text-align: center;
-  
-    }
-
-    
-    #features{
-        font-family: 'PT Sans', sans-serif;
-        margin-top: 90px;
-        margin-right: 20px;
-        padding: 10px;
-        float: right;
-        background-color: aliceblue;
-        width:550px;
-        border-radius: 10px;
-        margin-right: 80px;
-    }
-
-    #inside_slider{
-        max-width:700px;
-        max-height:300px;
-        margin-left: 100px;
-    }
-
-    .carousel-inner{
-        border-radius: 15px;
-        box-shadow: #fdaf48;
-    }
-    footer{
-    width:1335px;
+footer{
+    width:1253px;;
     height: auto;
     background-color:black;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 100px;
-    color:#eb8c10;
+    color:#eb8c10;    
+    font-family: 'PT Sans', sans-serif;
+    padding:1px;    
+
     }
 
-    footer nav ul{
+footer nav ul{
     text-align: center;
     }
 
-    footer nav ul li {
+footer nav ul li {
     list-style-type: none;
    
     }
 
-    footer nav ul li a {
+footer nav ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color:#eb8c10;
+    color:white;
     font-family: 'PT Sans', sans-serif;
-   
+    }
+
+#return
+{
+        float:right;
+        font-weight: bold;
+        margin-right: 30px;
+        margin-top: 10px;
     }
     
-    #bottombar{
-        background: black;
+#contact{
+        float: left;
+        font-weight: bold;
+        margin-top: 10px;
     }
+
+
+/* using media queries ahead */
+
+@media screen and (max-width: 900px) {
+    
+    body{
+        max-width: 800px;
+        min-height: 800px;
+        margin: 5px;
+    }
+    
+    header{
+        width:750px;
+        height: 100px;
+        background: linear-gradient(to right,white,white,#fdaf48);
+    }
+    main{
+        background: url(../images/background.jpg);
+        width:750px;
+        height: 1150px;
+    }   
+    
+    #menubar{
+        background: black;
+        max-width: 750px;
+        height: 60px;
+    }
+    
+    #main_img{
+        width:550px;
+        height:300px;
+        margin-left: 120px;
+        margin-top: 50px;
+    }
+    
+    #searchbox form input{
+        margin-top:15px;
+        width: 255px;    
+    }
+    
+    #searchbox form button{
+     margin-top:15px;
+     margin-left: 20px;
+     width: 64px;
+     height: 30px;
+     float: right;
+    
+    }
+
+    #payment_menu a{
+    margin-left: 100px;
+    }
+
+    #features{
+        margin-right: 130px;
+    }
+    
+    #about_bookabook{
+        margin-left:120px;
+    }
+    footer{
+        width:750px;
+        }
+    
+    
+
+  }
+
