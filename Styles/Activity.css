@@ -1,0 +1,53 @@
+main{
+  background-image: url(/images/background.jpg);
+  width: 1250;
+  height: 1000px;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+#box1{
+ color: black;
+ height:340px ;
+ width: 800px;
+
+ margin-left: 190px;
+ padding: 5px;
+ padding-left: 50px;
+ background: white;
+ box-shadow: 3px,3px,3px,3px,rgb(201, 186, 186);
+ border-radius:15px ;
+}
+
+.book1{
+    float: right;
+    height:200px;
+    width:200px;
+    margin: 50px;
+    box-shadow: 5px 4px 4px 2px rgb(27, 26, 26);
+    border-radius:15px ;
+    
+}
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+  
+ 
+}
+
+@media screen and (max-width: 900px) {
+  main{
+    width: 850px;
+    height: 1000px;
+  }
+
+  #box1{
+    width: 500px;
+    margin-left: 90px;
+  }
+  .book1{
+    width:100px;
+    margin: 40px;
+  }
+}

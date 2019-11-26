@@ -1,0 +1,41 @@
+#wrapper{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns:20% 80%;
+    grid-template-areas: 
+    "leftbar mainpart"  ;
+}
+
+#leftbar{
+    grid-area:leftbar;  
+    margin:1em 1em 1em 3em;
+    padding:1em;
+    height:auto;
+    font-weight:bold;
+    background-color:white;
+    text-align: center;
+    
+}
+
+#mainpart{
+    grid-area:mainpart;
+    background-color: white;
+    margin:1em 3em 1em 1em;
+    padding:1em;
+}
+
+form{
+    margin-left:5em;
+    margin-right:5em;
+}
+
+#contactus label{
+    width:15em;
+    float:left;
+ 
+}
+
+#contactus input{
+    margin-left: 1em;
+    margin-bottom: .5em; 
+}

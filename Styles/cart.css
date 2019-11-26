@@ -1,0 +1,97 @@
+.container{
+    background-color: rgb(150, 141, 141);
+    float: left;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px rgb(68, 28, 28); 
+    padding: 10px;
+}
+#wrapper{
+    background-color: white;
+    width: 350px;
+    
+    
+}
+#wrapper p img{
+    float: initial;
+    margin-left: 10px;
+    margin-left: 50px;
+    
+}
+#wrapper p a {
+    display: flex;
+    flex-direction: row;
+    width:300px;
+}
+#wrapper p span{
+   font-size : large;
+   float:inline-end;
+   font-weight: bold;
+   margin-left: 250px;
+
+}
+#wrapper p{
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px rgb(68, 28, 28); 
+}
+main #shippingaddress{
+    background-color: rgb(134, 130, 130);
+    float: right;
+    width: 350px;
+    margin-top:100px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px rgb(68, 28, 28); 
+    margin-left: -400px;
+
+}
+#shippingaddress input{
+    
+    float: left;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    margin-right:10px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 210px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgb(68, 28, 28); 
+    margin-left: 10px;
+
+}
+#shippingaddress label {
+    float: left;
+    text-align: left;
+    box-sizing: border-box;
+    width: 100px;
+    font-size: 15px;
+    padding:4px;
+
+}
+ input[type=text]:focus {
+    border: 2px solid #555;
+    box-sizing: border-box;
+
+
+  }
+  #payment_init input[type=button]:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    
+}
+#payment_init input{
+float: right;
+background: rgb(80, 209, 48);
+border: 2px solid #4CAF50;
+        border-radius: 12px;
+        box-shadow: 1px 1px 1px rgb(68, 28, 28);    
+        margin-left: 20px;
+}
+input::placeholder {
+    opacity: 0.4;
+    color: gray;
+
+
+  }

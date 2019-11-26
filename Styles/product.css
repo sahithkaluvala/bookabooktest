@@ -1,0 +1,174 @@
+
+/*External head and foot code*/
+
+
+
+.button1 {
+    display: block;
+    width: 100px;
+    border: none;
+    background-color: #4CAF50;
+    padding: 0.6em;
+    font-size: 80%;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+  } 
+
+#wrapper{
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+
+  
+ 
+}
+
+#leftbar{
+    font-weight:bold;
+    height:100%;
+    background-color:white;
+    text-align: center;
+    margin:1em 1em 0 1em; 
+}
+.leftlink{
+    display:none;
+}
+
+#book1{
+    max-width:  100%;;
+    max-height: 100%;
+    margin-top:1em;
+    
+}
+
+
+#mainpart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+    background-color:white;
+    padding:0.5em;
+    margin:0em 1em; 
+} 
+
+.title1{
+    font-size:120%;
+    font-weight:bold;
+    color:blue;
+    margin:0;
+}
+
+.title3{
+    padding-bottom:1em;
+}
+
+#mainpart p{
+    margin:0.5em;
+}
+
+
+aside{
+    display:none;
+}
+#photos{
+    display:none;
+}
+#bottomlink{
+    padding:0.2em;
+    margin:1em;
+    background-color:white;
+    text-align:center;
+    font-weight:bold;
+    
+}
+.bottomlink:hover{
+ font-size:120%;
+
+}
+@media (min-width:760px){
+#wrapper{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:30% 70%;
+    grid-template-rows:65% 35%;
+    grid-template-areas: 
+    "leftbar mainpart" 
+    "aside aside" ; 
+}
+
+
+#leftbar{
+    grid-area:leftbar;  
+    margin:1em 1em 1em 3em;
+    padding:1em;
+    height:auto;
+    
+}
+.leftlink{
+    display:block;
+}
+
+.leftlink:hover{
+    font-size:120%;
+}
+
+
+
+#mainpart{
+    grid-area:mainpart;  
+    background-color:white;
+    margin:0.9em 5em 1em 0;
+    padding:1em 1em 1em 1em;
+    font-size:120%;
+    height:auto;
+  
+    
+   
+  }
+
+aside{
+  
+    display:block;
+    grid-area:aside;
+    width:95%;
+    background-color:black; 
+    color:white;
+    margin:1em;
+    
+} 
+
+aside h2{
+    display:flex;
+    justify-content: center;
+    margin-left:4em;
+}
+#photos{
+    
+   margin-left:1em;
+    display:flex;
+    justify-content:space-around; 
+    flex-wrap:wrap;
+    
+    /*grid-template-columns:repeat(5,20%);
+    grid-gap:.2em; */
+  
+  list-style: none;
+  
+ 
+
+}
+#photos img{
+    width:80%;
+    height:80%;
+}
+
+
+#bottomlink{
+    display:none;
+}
+  
+}
+ 
+
+  

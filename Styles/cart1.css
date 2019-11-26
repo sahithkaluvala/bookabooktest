@@ -1,0 +1,37 @@
+#wrapper{
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+#wrapper div {
+    background-color: rgb(233, 219, 158);
+    float: left;
+    width: 40%;
+    margin: 5%;
+    padding-right:10px;
+
+       
+}
+.container ul li a{
+    text-decoration: none;
+    
+
+}
+.container ul li{
+border: .5px solid rgb(134, 127, 127);
+margin: 2px;
+}
+.container ul {
+list-style-type: none;
+
+}
+.container span input[type=number]{
+ width:30px;
+}
+#fCart>li>span{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}

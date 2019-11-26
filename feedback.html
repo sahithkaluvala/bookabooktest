@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+<link  href="../Styles/main.css" rel="stylesheet"> 
+<link  href="../Styles/feedback.css" rel="stylesheet">
+<script src="/js/feedback.js" type="text/javascript"></script>  
+<title>BOOK-A-BOOK</title>
+</head>
+
+<body>
+    <div class="flex-container">
+    <header>
+    <a href="Home.html" id="home"><img src="../images/logo.png" style="width: 250px; height:80px" alt="main logo"> </a>
+    <a href="/login.html" id="login">Login / Sign Up</a>
+</header>
+
+<nav id="menubar">
+        <ul>
+            <li class="list"><a href="category.html">Category</a>
+            <ul div class="catt">
+                <a href="Teen.html"> Teen</a>
+                <a href="Youth.html"> Youth</a>
+                <a href="Scitizen.html"> Senior  Citizen</a>
+            </ul>
+            </li>
+    
+            <li><a href="product.html">Products </a></li>
+            <li><a href="#">Account Activity </a></li>
+            <li id="payment_menu"> <a href="payment.html">Payment</a></li>
+            <li id="searchbox_input">
+                <input type="text" placeholder="Search for books & authors.."   >
+            </li>
+            <li id="searchbox_button"><button type="submit" placeholder="Search book" value="Search Book">Search</button> </li>
+             
+        </ul>
+    </nav>
+
+<main>
+    <div id="box">
+        <h2>Your Feedback is valuable to us!!!</h2>
+            <form action=""><br/>
+                Enter Your First Name  :               
+                <input type="text"name="name" id="fname" required>
+                &nbsp;<span style="font-size: 1.2vw; color: red;" id="span1"></span>
+                <br/><br/>
+
+                Enter Your Last Name  :
+                <input type="text" name="name" id="lname" required>
+                &nbsp;<span style="font-size: 1.2vw; color: red;" id="span2"></span>
+                <br/><br/>
+
+                Email-id :
+                <input type="text" name="name" id="emailid" required>
+                &nbsp;<span style="font-size: 1.2vw; color: red;" id="span3"></span>
+                <br/><br/>
+
+                
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+               Please Write Your Feedback for bookabook.com :
+               &nbsp;<span style="font-size: 1.2vw; color: red;" id="span4"></span>
+               <br/><br/>
+
+                <textarea rows="5" cols="30" id="feedback" required></textarea> <br/><br/>
+                <input type="submit" id="feedback_button" placeholder="Submit feedback" onclick="validateForm()">
+                </form>
+    </div>
+    <script>
+
+        let $ = function(id)
+        {
+        return document.getElementById(id);
+        }
+        function validateForm(){
+        let firstname = $('fname');
+        let lastname = $('lname');
+        let emailId = $('emailid');
+        let feedback = $('feedback');
+
+        let namepattern = /^[a-zA-Z]{2,12}$/;
+        let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+
+        if(firstname.value == "")
+        {
+        //firstname.nextElementSibiling.innerHTML='Please enter firstname';
+        document.getElementById('span1').innerHTML='Please Enter Your First Name';
+        }
+        else if(!namepattern.test(firstname.value)){
+        document.getElementById("span1").innerHTML="Please enter Valid name";
+        document.getElementById("span1").style.color="red";
+        document.getElementById("span1").style.fontsize="1.2vw";
+        return false;
+     }
+        else if (lastname.value == "")
+        {
+        document.getElementById('span2').innerHTML='Please Enter Your Last Name';
+        }
+        else if(!namepattern.test(lastname.value)){
+        document.getElementById("span2").innerHTML="Please enter Valid name";
+        document.getElementById("span2").style.color="red";
+        document.getElementById("span2").style.fontsize="1.2vw";
+        return false;
+     }
+        else if(emailId.value == ""){        
+        //firstname.nextElementSibiling.innerHTML='Please enter firstname';
+        document.getElementById('span3').innerHTML='Please Enter Your Email Id';
+        }
+        else if(!emailpattern.test(emailId.value)){
+        document.getElementById("span3").innerHTML="Please enter Valid Email ID";
+        document.getElementById("span3").style.color="red";
+        document.getElementById("span3").style.fontsize="1.2vw";
+        return false;
+     }
+        else{            
+            alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
+        }
+
+        }
+    
+        </script>
+</main>
+
+<footer>
+        <nav id="bottombar">
+            <ul>
+                <div id=contactus>
+                <li id="contact"><a href="contact.html">Contact Us </a> </li>
+                <p id="call"><img id="call1" src="/images/telephone-call.png" style="width: 45px; height: 30px;">+1-333-222-4444</p>
+                <p id="mailImg"><img id="mailImg1" src="/images/mail.png" style="width: 32px; height: 25px;">&nbsp;support@bookabook.com</p>
+                </div>
+                <div>
+                <li id="terms"><a href="terms.html">Terms and Conditions </a></li>
+                </div>  
+                <div id=returnbook>
+                <li id="return"> <a href="return.html">Return a Book </a> </li><br>
+                <li><p id="return_text"><img src="/images/quoted.png" height="18px" width="18px"> &nbsp;Return your favourite books <br/>at your own ease!&nbsp;&nbsp;<img src="/images/quote.png" height="18px" width="18px"> </p></li>
+                </div>
+            </ul>
+       </nav>
+    
+     <div id='socialmedia'>
+        <a href="#"><img id="footer_img1" src="/images/facebook.png" ></a>
+        <a href="#"><img id="footer_img2" src="/images/instagram.png"></a>
+        <a href="#"><img id="footer_img3" src="/images/twitter.png" ></a>
+        <a href="#"><img id="footer_img4" src="/images/youtube.png" ></a>
+    </div>
+     <span style="color: aliceblue; font-family: 'PT Sans', sans-serif;">&copy; 2019 Bookabook .All Rights Reserved.</span>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,47 @@
+main{
+    background: url(../images/background.jpg);    
+    background: linear-gradient(to right,#fdaf48,white,#fdaf48);    
+    margin-right: 2vw;
+    padding:1vw 2vw 0vw 2vw;
+    border-radius: 1vw;
+
+}
+h2{
+    
+font-family: 'PT Sans', sans-serif;
+font-weight: bold;
+text-align: center;
+font-size: 3vw;
+background: linear-gradient(to white,white,#fdaf48);   
+
+}
+
+.review0, .button_class{
+    margin-left: 1vw;
+    font-size: 1.3vw;    
+}
+
+.button_class{
+background: black;
+width: 8vw;
+height: 2vw;
+color: rgb(240, 149, 85);
+font-family: 'PT Sans', sans-serif;
+font-weight: bold;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+.img1{
+    margin-left: 1vw;
+    margin-right:3.5vw;
+    box-shadow: 0.2vw 0.21vw 0.21vw black;
+    border-radius: 1vw; 
+    position: relative;  
+    float: left; 
+    width: 26vw;
+    height: 18vw;
+
+}

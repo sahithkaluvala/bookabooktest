@@ -1,0 +1,192 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+        <link  href="/Styles/main.css" rel="stylesheet">   
+        <link  href="/Styles/newPayment.css" rel="stylesheet">   
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+        crossorigin="anonymous"></script>
+        
+        <title>BOOK-A-BOOK</title>
+        </head>
+
+        <body>
+        <div class="flex-container">
+        <header>
+            <a href="Home.html" id="home"><img src="../images/logo.png" style="width: 250px; height:80px" alt="main logo"> </a>
+            <a href="/login.html" id="login">Login / Sign Up</a>
+        </header>
+
+        <nav id="menubar">
+            <ul>
+                <li class="list"><a href="category.html">Category</a>
+                <ul  class="catt">
+                    <li>            <a href="Teen.html"> Teen</a>
+                    </li>
+                    <li>            <a href="Youth.html"> Youth</a>
+                    </li>
+                    <li>            <a href="Scitizen.html">Senior  Citizen</a>
+                    </li>
+                </ul>
+                </li>
+
+                <li><a href="product.html">Products </a></li>
+                <li><a href="Activity.html">Account Activity </a></li>
+                <li id="payment_menu"> <a href="Tracking.html">Tracking</a></li>
+                <li id="searchbox_input">
+                    <input type="text" placeholder="Search for books & authors.."   >
+                </li>
+                <li id="searchbox_button"><button type="submit"  value="Search Book">Search</button> </li>
+                
+            </ul>
+        </nav>
+        
+
+        <main >
+            <div id="paymentHead">
+                    
+                <div class="paymentmodesimg">
+                        <img src="../images/paymentmodes.png" alt="cards accepted">
+                        <img src="../images/interac.png"  alt="cards accepted">
+                </div>
+                <div class="paymentmodes">
+                    <form id="paymentmodesradio">
+                            
+                                    <label>Choose a payment method:</label>
+                                    <input type="radio" required name="paymentmodesradio" id="cc" value="cc"><label for="cc">Credit/Debit Card</label>
+                                    <input type="radio" required name="paymentmodesradio" id="interac" value="interac"><label for="interac">Interac</label>
+                            
+                            
+                    </form>
+                </div>
+                
+                <div class="interac">
+                        
+                        <form id="interacPayment">
+                        <fieldset>
+                                <legend>Interac Payment:</legend> 
+                                <span id="ierrormessage" ></span><br>
+                    <label for="emailVal">Enter your email address</label>
+                    <input type="email" required id="emailVal" placeholder="abc@domain.com">
+                    <br>
+                    <label for="name">Enter your name</label>
+                    
+                    <input type="text" required id="nameVal" placeholder="John"><br>
+                    <input id="Ibacktocard"  type="button" value=" Back to Cart " />
+                    <input type="submit" id="interacPay" value="Proceed to Pay" />
+                    
+                        </fieldset> 
+                        
+                        
+                </form>
+                </div>
+
+                <div class="creditcard">
+                    <form id="ccpayment">
+                            <fieldset>
+                            <legend>Credit Card/Debit Card Payment:</legend> 
+                            <span id="errormessage" ></span><br>
+                            <span id="err1"></span>
+                            <label for="cardsel">Select you card type </label> 
+                            <select id='cardsel' required> 
+                                    <option value="" >Select your CARD Type</option>
+                                    <option value="VISA">VISA CARD</option>
+                                    <option value="AMEX">AMEX CARD</option>
+                                    <option value="MASTER">MASTER CARD</option>
+                            </select><br>
+                            <label for="cname">Name on Card <span id="err2"></span></label>
+                            <input type="text" id="cname" required placeholder="Sahith Reddy Kaluvala"/> <br>
+                            <label for="cardvalue">Please Enter your card info <span id="err3"></span> </label>
+                            <input type="text" id="cardvalue" required minlength="13" maxlength="16" placeholder="1111222233334444"/><br>
+                            
+                            <label for="cvvvalue">Please enter CVV <span id="err4"></span></label>
+                            <input type="text" id="cvvvalue" required  placeholder="123" minlength="3" maxlength="3"    /> <br>
+                            <span class="info">* CVV is the card security code, unique three digits number on the back of your card.</span> <br>
+                            <label for="expiry"  > Expiry Year and Month </label>
+                            <input type="month" id="expiry" required   min="2019-11"  size="1"/> <br>
+                            <!-- <label for="Card Expiry Month" > Expiry Month </label>
+                            <input type="text" id="expirymon" required placeholder="JAN" minlength="3" maxlength="3" size="1"></input>
+                            <br> -->
+                            <label for="postalvalue"  >Postalcode </label> 
+                            <input type="text" minlength="6"  maxlength="6" id="postalvalue" required placeholder="M8V 3A6"/>
+                            <br>
+                            <input id="Cbacktocard" type="button" value=" Back to Cart " />
+                            <input type="submit"  id="ccpay" value="Proceed to Pay" >
+                        
+                            </fieldset>
+                    </form>
+                </div>
+
+        </div>
+            
+        </main>
+
+
+        <footer>
+            <div id="footer">
+                <div id="div1" >
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;&nbsp;+1 905 789 8486</li>
+                        <li class="fa fa-envelope" style="color:white">&nbsp;&nbsp;&nbsp;info@bookabook.com</li>
+                    
+                    </ul>
+                    </div>
+                    <div id="div2" >
+                        <ul>
+                            <li>
+                            <a href="">Terms and Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="div3" >
+                            <ul>
+                                <li>
+                                <a href="">Return a book</a>
+                            
+                                        <p>"return your favourite books at own ease"</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="faviconsfooter">
+                                <div class="having-problem">
+                                    <p>Follow us on :&nbsp;
+                                        <a href="https://www.facebook.com" target="_blank" style="color:white">
+                                        <i class="fa fa-facebook">
+                                        </i></a>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <a href="https://instagram.com" target="_blank" style="color:white">
+                                        <i class="fa fa-instagram"></i></a>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <a href="https://twitter.com" target="_blank" style="color:white">
+                                        <i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                        <a href="https://www.linkedin.com" target="_blank" style="color:white">
+                                        <i class="fa fa-linkedin"></i></a></p></div>
+                        </div>
+            </div>
+            <span style="color: aliceblue; font-family: 'PT Sans', sans-serif;">&copy; 2019 Bookabook .All Rights Reserved.</span> 
+        </footer>
+
+            
+            
+        
+    </div>
+        <script src="../js/payment.js" ></script>
+        </body>
+        
+
+        </html>
+        
+
+
+
+
+
+
+
+
+

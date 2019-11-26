@@ -1,0 +1,46 @@
+main{
+    padding-top: 10px;
+}
+#box{
+    
+    height: 60vw;
+    width: 75vw;
+    background: black;
+    border-radius: 10px;
+    margin:auto;
+    margin-top:5vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw #cfb6a6;
+    color:white;
+    padding:2vw;
+    font-size: 1.5vw;
+    color: #ff9100;
+}
+
+h2
+{
+    font-weight: 10vw;
+    color:#ff9100;
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    color:#fbc988;
+    
+}
+
+main li{
+ font-style: italic;
+}
+
+main{
+    background: url(../images/background1.jpg);
+    height: 80vw; 
+}
+
+main h4{
+    font-weight: 30px;
+    font-style: italic;
+    font-weight: 100;
+    color: red;
+}
