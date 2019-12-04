@@ -1,8 +1,7 @@
 //java script for swaping image (image galary)
-// this is a comment added
 
 function myFunction(imgs) {
-    //creating two variable
+    
       var expand = document.getElementById("expandImg");
       var imageT = document.getElementById("imgtext");
   
