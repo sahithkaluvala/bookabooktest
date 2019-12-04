@@ -1,4 +1,10 @@
+*{
+  color: white;
+}
 
+h1{
+  margin-left: 50px;
+}
 .leftbar{
     float:left;
     padding-right:50px;
@@ -17,6 +23,7 @@
     display: block;
     width: 15%;
     border: none;
+
     background-color: #4CAF50;
     padding: 14px 28px;
     font-size: 16px;
@@ -38,10 +45,60 @@
   }
 
   .font1{
+    
       font-weight: bold;
     font-size: 20px;
    
   }
+  /*----css for java script----*/
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  .imgsize{
+    height: 130px;
+    width: 150px;
+  }
+
+  .con_imgsize{
+    height: 200px;
+    width: 100px;
+    margin: auto;
+  }
+  .column img {
+    opacity: 1.8;
+    cursor: pointer;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    position: static;
+    display: none;
+    padding: 10px;
+    
+  }
+
+  h2{
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
+  #imgtext {
+    position: relative;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 25px;
+
+  }
+
+  
 
 
   
@@ -69,8 +126,84 @@
   width:100px;
   
 }
+}
+/*----------media query for pixel and pixel xl -------------*/
 
- 
-
+@media screen and (max-width: 480px){
+  .mainpart{
+    width: 440px;
+    height: 800px;
 }
 
+.book1{
+  margin: 5px;
+  width: 100px;
+  height: 300px;
+}
+
+.p{
+  width: fit-content;
+  font-size: 10vw;
+}
+
+.address{
+  font-size: 10vw;
+  
+}
+
+*.block{
+  width: fit-content;
+}
+h1{
+  font-size: 20px;
+}
+.imgsize{
+  width: 20vw;
+  padding-block-end: 5vw;
+  
+}
+
+}
+#footer{
+  display: flex;
+ flex-direction: row;
+ font-size: large;
+ align-content: space-around;
+ justify-content: space-around;
+ list-style: none;
+}
+#footer ul{
+ text-decoration: none;
+ list-style-type: none;
+}
+#footer ul li {
+ list-style: none;
+ color: white;
+ list-style-type: none;
+}
+#footer ul li a{
+ text-decoration: none;
+}
+
+
+#faviconsfooter{
+ 
+ vertical-align: bottom;
+}
+
+
+
+#Cbacktocard{
+float: left;
+}
+
+@media only screen and (max-width: 600px) {
+ #footer{
+     display: flex;
+    flex-direction: column;
+    font-size: large;
+    align-content: flex-start;
+    justify-content:flex-start;
+    text-align: left;
+}
+}

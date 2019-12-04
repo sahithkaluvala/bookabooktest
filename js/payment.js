@@ -21,14 +21,14 @@
             const emailv=document.querySelector('#emailVal');
             loadEventListeners();
                
-                    function loadEventListeners() {
-                    document.addEventListener('DOMContentLoaded', hide);
-                    if(form)
-                    form.addEventListener('submit', validateCard);
-                    interacform.addEventListener('submit',validateEmail);
-                   
+            function loadEventListeners() {
+            document.addEventListener('DOMContentLoaded', hide);
+            if(form)
+            form.addEventListener('submit', validateCard);
+            interacform.addEventListener('submit',validateEmail);
+            
 
-            }
+              }
             function validateEmail(e){
                 $("#ierrormessage").text('');
                 
@@ -103,7 +103,7 @@
 
                 e.preventDefault();
             }
-    function Validate()
+     /*  function Validate()
     {
         var cardVal=document.getElementById("cardvalue").value;
         var prefix=cardVal.substring(0,2);
@@ -135,5 +135,11 @@
         
 
     }
+*/
+let books ={
+     name: 'sahith',
+     price: '14$',
+     descirption: 'e,ksdhkvf,ddvbajdhvvuchedakfsgckugeadgcujageds'
+}
 
-
+console.log(books.name)

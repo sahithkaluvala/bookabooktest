@@ -1,0 +1,93 @@
+{ "book": [
+        {
+    "p1":"Category :",
+
+    "Category1":"Teen",
+
+    "p2":"Language :",
+
+    "Language1" :"English, French",
+
+    "p3":"Author :",
+
+    "Author1" :"Charlotte Nicole Davis",
+
+    "p4":"Publication Information  :",
+
+    "Publication_information":"Vancouver : 2003",
+
+    "p5":"Summary :",
+
+    "Summary" :"The country of Arketta calls them Good Luck Girls--they know their luck is anything but. Sold to a 'welcome house' as children and branded with cursed markings. Trapped in a life they would never have chosen.",
+
+    "p6":"Availablity :",
+
+    "Availablity" :"YES",
+
+    "url":"/images/luck.jpg",
+
+    "book1":"Book"
+        },
+
+    {
+    "p1":"Category :",
+        
+    "Category1":"Teen",
+        
+    "p2":"Language :",
+     
+    "Language1" :"English",
+        
+    "p3":"Author :",
+        
+    "Author1" :"Strickland, A. M.",
+        
+    "p4":"Publication Information  :",
+        
+    "Publication_information":"Syndey : 2006",
+        
+    "p5":"Summary :",
+        
+    "Summary" :" In the aftermath of a war where Automae took over the kingdom of Rabu and bent humanity to their will Ayla takes a job as a servant in the house of  the soverign for one purpose: to get revenge for her family's death by killing his daughter. Lady Crier, the heiress, was Made to be a perfect  ruler of the kingdom, but she no longer knows if that is what she wants  once she discovers some of her father's cruel secrets.when Crier and Ayla finally meet, nothing seems certain anymore",
+        
+    "p6":"Availablity :",
+        
+    "Availablity" :"YES",
+        
+    "url":"/images/war.jpg",
+        
+    "book1":"Book"
+},
+
+{
+    "p1":"Category :",
+                
+    "Category1":"Teen",
+                
+    "p2":"Language1 :",
+                
+    "Language" :"English",
+                
+    "p3":"Author :",
+                
+    "Author1" :"Nina Varela",
+                
+    "p4":"Publication Information  :",
+                
+    "Publication_information":"New York : HarperTeen , 2019.",
+                
+    "p5":"Summary :",
+                
+     "Summary" :" Ariel Vaughn is a high powered attorney and a partner at her firm, dating one of the most eligible bachelors in New York City, who is also a powerful judge firmly on the political path. She's living the high life, but her sex life has hit a low point.     Once a tiger in the sheets, his interest has cooled considerably, andshe's wound so tight she'sabout to explode",
+     
+    "p6":"Availablity :",
+                
+    "Availablity" :"YES",
+                
+    "url":"/images/door.jpg",
+                
+    "book1":"Book"
+                        }
+    ]
+
+}

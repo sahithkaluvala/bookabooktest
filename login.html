@@ -5,6 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 <link  href="/Styles/main.css" rel="stylesheet">   
 <link href="/Styles/login.css " rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="login.js"></script>
 
 
@@ -46,18 +47,21 @@
                     <p float="center"><span >LOGIN</span></p>
                     <label for="uname"><b>Username</b></label>
                     <input type="text" placeholder="Enter Username"  id="username"  >
-                     <br><br><br>
+                    <div id="dom"></div>
+                     <br/><br/>
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password"  id="password"  >
-                    <br><br><br>
-                    <button type="submit" onclick="validate()" >Login</button>
+                    <input type="password" placeholdefdr="Enter Password"  id="password"  >
+                    
+                    <div id="dom1"></div>
+                    <div></div>
+                    <button type="button" value="submit" onsubmit="validate()" id="add" >Login</button>
                     <button type="sign_in"><a href="/signin.html">Sign in</a></button>
                     <br><br><br>
                     
                 </div>    
             </form>
           
-           
+             
         </main>
 
 

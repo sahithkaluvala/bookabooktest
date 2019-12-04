@@ -1,0 +1,37 @@
+{"FAQ":[
+    {
+        "question":"Why should I choose to rent a book instead of buying a new books",
+        "answer":["Testbooks are required only for a semester, and children books are not neccesary to buy as your children grow up. Therefore,renting a book a is a good idea to save money and save the tree. "]
+    },
+    {
+        "question":" How much do I need to pay for renting a book?",
+        "answer":["As this book is reusable, it will only cost you 20% of the regular price of the book. Besides, you also need to pay the membership fee annually, the cost of membership is 100 CAD per year."]
+    },
+    {
+        "question":" How long can I borrow the books for?",
+        "answer":["The loan period for all the books is 21 days."]
+    },
+    {
+        "question":" How many items can I have out at one time?",
+        "answer":["Each member can borrow 5 books at the same time."]
+    },
+    {   
+        "question":"Can I renew the books I have borrowed?",
+        "answer":[" As long as no one hold this book after you, you can renew the books three times."]
+
+    },
+    {
+        "question":"What is the procedure to rent a book?",
+        "answer":[ "Step1:apply for membership", "Step2:search the books, cost and availability and so on." , "Step3:book you order online", "Step4:book will be delivered to your address with five days."]       
+    },
+    {
+        "question":"How to return the books?",
+        "answer":["Option1: You can drop the books at any shopper drug store near you","Option2: You can make an appointment and we will collect the book in your house. "]
+
+    },
+    {
+        "question":"Can I pay in cash?",
+        "answer":["No, as this is a virtual rental bookshop, you can only pay online. What are the fine for overdue books? Fine per day is 0.35 CAD per items, and the maximum fine for each items is 10 CAD."]
+    }
+          
+]}

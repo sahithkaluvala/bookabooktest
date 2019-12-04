@@ -71,3 +71,52 @@
 }
    </script>
    */
+  let $ = function(id)
+  {
+  return document.getElementById(id);
+  }
+  function validateForm(){
+  let firstname = $('fname');
+  let lastname = $('lname');
+  let emailId = $('emailid');
+  let feedback = $('feedback');
+
+  let namepattern = /^[a-zA-Z]{2,12}$/;
+  let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+
+  if(firstname.value == "")
+  {
+  //firstname.nextElementSibiling.innerHTML='Please enter firstname';
+  document.getElementById('span1').innerHTML='Please Enter Your First Name';
+  }
+  else if(!namepattern.test(firstname.value)){
+  document.getElementById("span1").innerHTML="Please enter Valid name";
+  document.getElementById("span1").style.color="red";
+  document.getElementById("span1").style.fontsize="1.2vw";
+  
+}
+  if (lastname.value == "")
+  {
+  document.getElementById('span2').innerHTML='Please Enter Your Last Name';
+  }
+  else if(!namepattern.test(lastname.value)){
+  document.getElementById("span2").innerHTML="Please enter Valid last name";
+  document.getElementById("span2").style.color="red";
+  document.getElementById("span2").style.fontsize="1.2vw";
+  
+}
+  if(emailId.value == ""){        
+  //firstname.nextElementSibiling.innerHTML='Please enter firstname';
+  document.getElementById('span3').innerHTML='Please Enter Your Email Id';
+  }
+  else if(!emailpattern.test(emailId.value)){
+  document.getElementById("span3").innerHTML="Please enter Valid EMail Address";
+  document.getElementById("span3").style.color="red";
+  document.getElementById("span3").style.fontsize="1.2vw";
+  
+}
+  else{            
+      alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
+  }
+
+  }

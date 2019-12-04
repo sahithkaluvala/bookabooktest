@@ -8,7 +8,7 @@ function v(){
     let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/
     
     if(firstname.length==0 || lastname.length==0 || mail.length==0 || pass.length==0) {
-       alert("filed is blank ")
+       console.log(document.createElement("span"));
     }
     else if(!emailpattern.test(mail)){
         alert("format is not correct..")

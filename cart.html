@@ -6,47 +6,9 @@
 <link  href="/Styles/cart1.css" rel="stylesheet">  
 <link  href="/Styles/main.css" rel="stylesheet">   
 <title>BOOK-A-BOOK</title>
-<script>
-
-   // window.onload=up(10,'qty2',2);
-    
-        function up(max,qty,price) {
-            console.log(qty);
-            let tPrice="finalPrice"+qty.charAt(qty.length-1);
-            console.log(tPrice);
-            console.log(document.getElementById(tPrice).textContent.substr(0,document.getElementById(tPrice).textContent.length-1));
-
-            
-            document.getElementById(qty).value = parseInt(document.getElementById(qty).value) + 1;
-      if (document.getElementById(qty).value >= parseInt(max)) {
-          document.getElementById(qty).value = max;
-      }
-      document.getElementById(tPrice).innerHTML=`$${document.getElementById(qty).value*price}`;//("afterend","$"+(document.getElementById(qty).value*2))  // `${document.getElementById(qty).value*2} sfdjknkjjsdnfkjnkjjn$`;
-      calTotal();
-    }
-    function down(min,qty,price) {
-            console.log(qty);
-            let tPrice="finalPrice"+qty.charAt(qty.length-1);
-            
-      document.getElementById(qty).value = parseInt(document.getElementById(qty).value) - 1;
-      if (document.getElementById(qty).value <= parseInt(min)) {
-          document.getElementById(qty).value = min;
-      }
-     // document.querySelector(price).innerHTML=`${document.getElementById(qty).value*price} $`;//("afterend","$"+(document.getElementById(qty).value*2))  // `${document.getElementById(qty).value*2} sfdjknkjjsdnfkjnkjjn$`;
-      document.getElementById(tPrice).innerHTML=`$${document.getElementById(qty).value*price}`;
-      calTotal()
-    }
-         function calTotal(){
-             let temp=document.getElementsByClassName("totals");
-             let sum=0;
-             for(let i=0;i<4;i++){
-               sum+= parseInt(temp[i].textContent.substr(1,temp[i].textContent.length-1));
-             }
-             console.log(sum)
-             document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
-         }
-    
-    </script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+            crossorigin="anonymous"></script>
+<script src="../js/cart.js"></script>
 </head>
 
 <body>
@@ -83,30 +45,7 @@
           <h1>Cart
           </h1>
           <ul id="fCart">
-              <li>
-                   <span> <a href="../Product.html">a wedding on the beach <img id='book1' src="../images/a wedding on the beach.jpg" alt='book1' height="50px" width="30px" ></a></span>
-                    
-                    <span class="price"> <input type="button" value="+"  onclick="up(10,'qty1',1)"> <input type="number" disabled id="qty1" size="1" value="1" min="1"><input type="button"  value="-" onclick="down(0,'qty1',1)"><span class="totals" id="finalPrice1">$1</span></span>
-                    
-              </li>
-              <li>
-                <a href="../Product.html">Product 2<img id='book1' src="../images/a wedding on the beach.jpg" alt='book1' height="50px" width="30px" ></a> 
-                <span class="price"> <input type="button" value="+" onclick="up(10,'qty2',2)"> <input value="1" disabled type="number" id="qty2" size="1"  value="1" min="0"><input type="button" value="-" onclick="down('0','qty2',2)"><span class="totals" id="finalPrice2">$2</span></span>
-            </li>
-              <li>
-                    <a href="../Product.html">Product 3<img id='book1' src="../images/a wedding on the beach.jpg" alt='book1' height="50px" width="30px" ></a>
-                    <span class="price"> <input type="button" value="+" onclick="up(10,'qty3',3)"> <input value="1" disabled type="number" id="qty3" size="1"  value="1" min="0"><input type="button" value="-" onclick="down('0','qty3',3)"><span class="totals" id="finalPrice3">$3</span>
-
-              </li>
-              <li>
-                    <span><a href="../Product.html">Product 4<img id='book1' src="../images/a wedding on the beach.jpg" alt='book1' height="50px" width="30px" ></a> </span>
-                    <span class="price"> <input type="button" value="+" onclick="up(10,'qty4',4)"> <input  value="1" disabled type="number" id="qty4" size="1" value="1"  min="0"><input type="button" value="-" onclick="down('0','qty4',4)"><span class="totals" id="finalPrice4">$4</span>
-
-              </li>
-              <li >
-                    Total <span class="totPrice" id="totPrice" style="color:black">$11</span>
-
-              </li>
+              
           </ul>
           <hr>
         </div>

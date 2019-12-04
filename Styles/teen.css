@@ -1,3 +1,5 @@
+
+
 main{
     background: url(../images/background.jpg);    
     background: linear-gradient(to right,#fdaf48,white,#fdaf48);    
@@ -42,6 +44,28 @@ p{
     position: relative;  
     float: left; 
     width: 26vw;
-    height: 18vw;
+    height: 33.5vw;
+    margin-bottom: 3vw;
 
+}
+.book1{
+    padding:10px;
+}
+
+
+@media only screen and (max-width: 620px) {
+body{
+    font-size: 3.6vw;
+}
+p, .review0{
+    font-size: 3vw;
+}
+.button_class{
+    width: 20vw;
+    height: 6vw;
+    font-size: 3vw;
+}
+header{
+    padding-bottom: 0vw;
+}
 }

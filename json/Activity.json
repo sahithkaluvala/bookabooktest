@@ -1,0 +1,23 @@
+{"bookno":[
+	{   
+		"Bname":"110011",
+		"btitle":"Harry potter",
+		"bsummary":"Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.",
+		"price":"$25"
+		
+	},
+	{
+		"Bname":"110012",
+		"btitle":"Twilight",
+		"bsummary":"When Bella Swan relocates to Forks, Washington, to live with her father, she meets a mysterious Edward Cullen to whom she finds herself drawn. Later, she discovers that he is a vampire.",
+		"price":"$25"
+	},
+	{
+		"Bname":"110013",
+		"btitle":"Animal Farm",
+		"bsummary":"Animal Farm is an allegorical novella by George Orwell, first published in England on 17 August 1945.[1][2] The book tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy.",
+		"price":"$25"
+	}
+	
+	
+]}

@@ -8,6 +8,11 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+#home image{
+   width: 250px; 
+   height:80px;
+
+}
 header{
     background: linear-gradient(to right,white,white,#fdaf48);     
     display:flex;
@@ -18,12 +23,12 @@ header{
     float: right;
     display: block;
     text-transform: initial;
-    font-size: 20px;        
+    font-size: 12px;        
     font-weight: bold;
     text-decoration: none;
     font-family: 'PT Sans', sans-serif;
     margin-top: 35px;
-    margin-right:2em;
+    margin-right:1em;
     color:black;
 }
 #login:hover{
@@ -47,9 +52,6 @@ header{
     float:left;
     text-align: center;
     background-color: black ;
-    padding-top:5px;
-   
- 
 }
 
 #menubar ul li a{
@@ -57,7 +59,7 @@ header{
     display: inline-block;
     text-transform: initial;
     color: white;
-    font-size: 20px;
+    font-size: 13px;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
 }
@@ -77,7 +79,7 @@ header{
 #menubar ul li a{
     display:block;
     padding-top:1em;
-    padding-bottom:1em;
+    padding-bottom:1em; 
 
     text-decoration:none;
     white-space:nowrap;
@@ -98,7 +100,7 @@ ul ul a {
     left:100%;
     top:0;
     color: black;
-  padding: 12px 16px;
+  padding: 12px 16px; 
 }
 
 ul:before, ul:after{
@@ -120,17 +122,18 @@ ul after{
 
 #searchbox_input input{
     margin-top:1em;
-    width: 15vw;    
-    height: 25px;
+    width: 10vw;    
+    height: 15px;
 }
 
 #searchbox_button button{
-    font-size: 16px;
+    font-size: 9px;
+    padding:0;
      font-weight: bolder; 
      font-family: 'PT Sans', sans-serif;
      width: 8vw;
- height: 28px;
- margin-top: 1em;
+ height: 18px;
+ margin-top: 1.5em;
  background: linear-gradient( white,rgb(122, 121, 121));
 }
 
@@ -159,32 +162,31 @@ main{
 footer{
     height: auto;
     background-color:black;
-    text-align: center;
+    text-align:center;
     color:#eb8c10;    
     font-family: 'PT Sans', sans-serif;
-    padding:1px;    
+      
 
     }
-
-footer nav ul{
+/*footer nav li */
+footer nav div{
     text-align: center;
     }
-
+/*
 footer nav ul li {
     list-style-type: none;
-   
-    }
-
-footer nav ul li a {
+    } */
+/* footer nav ul li a*/
+footer div p a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 10px;
     font-family: 'PT Sans', sans-serif;
     }
 
 #footer_img1,#footer_img2,#footer_img3,#footer_img4{
     height:40px;
     width:40px;
-    margin-left: 60px;  
+    margin-left: 30px;  
     margin-bottom: 15px;
     margin-top:-5px;
     border-radius: 10px;
@@ -193,15 +195,17 @@ footer nav ul li a {
 /*#footer_img1{
     padding-left: 90px;
 } */
-
-#bottombar ul{
+/* bottombar ul */
+#bottombar{
     display:flex;
     justify-content: space-between;
 }
 
 #contactus{
     text-align:left;
- 
+    margin-left:5vw;
+    
+    
 }
 
 
@@ -209,50 +213,58 @@ footer nav ul li a {
     top:30px; 
    /*float:left;  */
     color: antiquewhite;
-    font-size: 16px;
+    font-size: 10px;
+    margin-right:-10vw;
+    margin-left:-1em;
    
    
 }
 
+#mailImg1{
+  margin:0;
 
+}
 #mailImg{
     top:30px; 
  /*float:left; */
-    font-size: 16px;
+    font-size: 10px;
     color:white;
+   margin-right:-10vw;
+   
+    
 }
 #terms{
-    margin-left:25vw;
+    margin-left:30vw;
+    margin-right:-10vw;
 }
 
-li #return_text{
+ #return_text{
     
-    position: relative;
-    color: antiquewhite;
+  
+    color: rgb(228, 200, 165);
     font-weight: bold;
   /*  top:-100px;
     margin-right:-160px; 
     margin-right:10px;
    */
+  
     
 }
 
 #return
 {       font-size: 40px;
-        float:right;
-        position: relative;
+    margin:0;
+    padding:0;
         font-weight: bold;
         color: antiquewhite;
-        top:-30px;
-        padding-right: 30px;
-        margin-top: 25px;
+        padding-right: 20px;
+        margin-top:-1vw;
+        
 }
 
-#returnbook img{
-    margin-top:1em;
-}
+
 #return a, #contact a, #terms a{
-    font-size: 25px;
+    font-size: 18px;
     color:#fa8e00;    }
     
 #contact{
@@ -265,7 +277,7 @@ li #return_text{
        /* float: left; */
         font-weight: bold;
         margin-top: 16px;
-        margin-left:-2em;
+        margin-left:-1em;
         }
 
 #terms a:hover{
@@ -278,13 +290,46 @@ li #return_text{
         color: #ffffff;
             }
 
+#call1{
+    width: 45px; height: 30px;
+}
+#mailImg1{
+    width: 32px; height: 25px;
+}
+#return_text1,#return_text2{
+
+    height:4px; 
+    width:8px;
+    padding:0;
+    margin:0;
+   
+
+}
+
 @media screen and (min-width: 900px){
+    #login{
+        
+        font-size: 20px;        
+        margin-top: 35px;
+        margin-right:2em;
+        
+    }
+    #menubar ul li a{
+        
+        font-size: 20px;
+    }
+    #menubar ul li{
+        padding-top:5px;
+    }
+
     #searchbox_input input{
         margin-top:1em;
         width: 15vw;    
         margin-left: 5vw; 
         height: 25px;
     }
+
+
 
     #menubar ul li{
  
@@ -300,13 +345,79 @@ li #return_text{
 #searchbox_button button{
     font-size: 16px;
  margin-right:3vw;
+ width: 8vw;
+height: 28px;
+margin-top: 1em;
 
 }
+
+ 
 #contactus{
     margin-right:5vw;
+    margin-left:2vw;
 }
 #terms{
-    margin-right:5vw;
+    margin-right:4vw;
+}
+
+footer{
+    padding:1px;
+}
+
+/* footer nav ul li a */
+footer nav div a {
+    font-size: 10px;
+    }
+
+#footer_img1,#footer_img2,#footer_img3,#footer_img4{
+    height:40px;
+    width:40px;
+    margin-left: 60px;  
+    margin-bottom: 15px;
+    margin-top:-5px;
+    border-radius: 10px;
+}
+#call{
+   
+    font-size: 16px;
+    margin-right:-3em;
+    margin-left:-0.5em;
+   
+}
+
+#mailImg{  
+    font-size: 16px;
+}
+
+#return a, #contact a, #terms a{
+    font-size: 25px;
+}
+#returnbook img{
+    margin-top:1em;
+}
+
+#return
+{       font-size: 40px;
+       
+    position: relative;
+        font-weight: bold;
+        color: antiquewhite;
+        top:-30px;
+       
+        margin-top: 25px;
+        margin-left:-3vw;
+      
+} 
+
+#return_text1,#return_text2{
+    height:18px; width:18px;
+   
+}
+}
+#return_text{
+    font-size:15px;
+   
+    
 }
 /* using media queries ahead */
 /*
@@ -355,11 +466,9 @@ li #return_text{
      float: right;
     
     }
-
     #payment_menu a{
     margin-left: 150px;
     }
-
     #features{
         margin-right: 130px;
     }
@@ -372,6 +481,5 @@ li #return_text{
         }
     
     
-
   }
-
+*/

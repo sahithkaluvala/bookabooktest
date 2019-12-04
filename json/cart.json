@@ -1,0 +1,45 @@
+[
+    {
+        "name": "a wedding on the beach",
+        "price": 1,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111001",
+        "qty":1
+    },
+    {
+        "name": "Product 2",
+        "price": 1,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111002",
+        "qty":1
+    },
+    {
+        "name": "Product 3",
+        "price": 3,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111003",
+        "qty":1
+    },
+    {
+        "name": "Product 4",
+        "price": 9,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111004",
+        "qty":1
+    },
+    {
+        "name": "Product 4",
+        "price": 9,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111004",
+        "qty":1
+    },
+    {
+        "name": "Product 7",
+        "price": 9,
+        "imgSrc":"../images/a wedding on the beach.jpg",
+        "productCode":"111004",
+        "qty":1
+    }
+
+]

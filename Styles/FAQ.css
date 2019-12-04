@@ -1,31 +1,75 @@
 #wrapper{
     display:grid;
-    grid-gap:10px;
-    grid-template-columns:20% 80%;
-    grid-template-areas: 
-    "leftbar mainpart"  ;
+    margin:10px;
+    /*grid-gap:8px; */
+    
 }
 
 #leftbar{
-    grid-area:leftbar;  
+   display:none;
+}
+
+#faqs{
+    grid-area:"faqs";
+    background-color: white;
+    margin:1em 3em 1em 1em;
+    padding:1em;
+}
+
+h2  a{
+    font-size:20px;
+    font-weight:bold;
+    color:rgb(47, 47, 184);
+    text-decoration: none;
+}
+h1{
+    font-size:150%;
+}
+h2{
+font-size: 120%;
+padding: .25em 0 .25em 25px;
+cursor: pointer;
+background: url(../images/plus.png) no-repeat left center;
+background-size: 20px 20px;
+}
+
+h2.minus {
+    background: url(../images/minus.png) no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.Answer {
+    display: none;
+    text-decoration:none;
+    color:black;
+  
+}
+
+.Answer.open {
+    display: block;
+   
+}
+
+
+@media (min-width:760px){
+    #wrapper{
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns:20% 80%;
+        grid-template-areas: 
+        "leftbar faqs"  ;
+    }
+
+    #leftbar
+    {  display:block;
+        grid-area:leftbar;  
     margin:1em 1em 1em 3em;
     padding:1em;
     height:auto;
     font-weight:bold;
     background-color:white;
     text-align: center;
-    
 }
 
-#mainpart{
-    grid-area:mainpart;
-    background-color: white;
-    margin:1em 3em 1em 1em;
-    padding:1em;
-}
 
-.Question{
-    font-size:20px;
-    font-weight:bold;
-    color:rgb(47, 47, 184);
 }
