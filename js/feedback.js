@@ -95,6 +95,9 @@
   document.getElementById("span1").style.fontsize="1.2vw";
   
 }
+else{
+  document.getElementById("span1").innerHTML="";
+}
   if (lastname.value == "")
   {
   document.getElementById('span2').innerHTML='Please Enter Your Last Name';
@@ -105,6 +108,10 @@
   document.getElementById("span2").style.fontsize="1.2vw";
   
 }
+else{
+  document.getElementById("span2").innerHTML="";
+
+} 
   if(emailId.value == ""){        
   //firstname.nextElementSibiling.innerHTML='Please enter firstname';
   document.getElementById('span3').innerHTML='Please Enter Your Email Id';
