@@ -116,14 +116,9 @@
   document.getElementById("span1").style.fontsize="1.2vw";
   
 }
-<<<<<<< HEAD
 else {
   document.getElementById("span1").innerHTML="";
   feedbackstore.fn=firstname.value;
-=======
-else{
-  document.getElementById("span1").innerHTML="";
->>>>>>> 4bae7233c8115e3fa8306c173e0c57d24f29633e
 }
   if (lastname.value == "")
   {
@@ -135,17 +130,10 @@ else{
   document.getElementById("span2").style.fontsize="1.2vw";
   
 }
-<<<<<<< HEAD
 else {
   feedbackstore.ln=lastname.value;
   document.getElementById("span2").innerHTML="";
 }
-=======
-else{
-  document.getElementById("span2").innerHTML="";
-
-} 
->>>>>>> 4bae7233c8115e3fa8306c173e0c57d24f29633e
   if(emailId.value == ""){        
   //firstname.nextElementSibiling.innerHTML='Please enter firstname';
   document.getElementById('span3').innerHTML='Please Enter Your Email Id';
