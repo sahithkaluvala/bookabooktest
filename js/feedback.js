@@ -88,9 +88,10 @@
        \, your feedback is received from\' ${retrievedObject.email} \' , Thanks !!<span>
        ` ; 
       }
-  
+
  
   function validateForm(){
+    console.log("startttt");
   let firstname = $('fname');
   let lastname = $('lname');
   let emailId = $('emailid');

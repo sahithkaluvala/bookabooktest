@@ -104,6 +104,11 @@ span[id='errormessage']{
 float: left;
 }
 
+main img{
+    width: auto;
+    height: auto;
+}
+
 @media only screen and (max-width: 600px) {
     #footer{
         display: flex;

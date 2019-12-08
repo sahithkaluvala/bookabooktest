@@ -27,7 +27,7 @@ xhr.onload = function(){
           Total <span class="totPrice" id="totPrice" style="color:black">$11</span>
 
              </li>`;
-          console.log(output);
+          //console.log(output);
          document.getElementById("fCart").innerHTML=output;
   }
 }
@@ -76,4 +76,72 @@ calTotal()
      console.log(sum)
      document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
  }
+
+function cartForm(){
+  
+  let fname= document.getElementById("fname").value;
+  let email= document.getElementById("email").value;
+  let adrs= document.getElementById("adr").value;
+  let city= document.getElementById("city").value;
+  let state= document.getElementById("state").value;
+  let namepattern = /^[a-zA-Z]{2,12}$/;
+  let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+  let adrspattern = /^[a-zA-Z]{5,30}$/;
+
+
+  if( fname == "" || (!namepattern.test(fname)))
+  {
+  document.getElementById("span1").innerHTML="Please enter Valid name";
+  document.getElementById("span1").style.color="red";
+  document.getElementById("span1").style.fontsize="1.2vw";
+  }
+  else
+  {
+  document.getElementById("span1").innerHTML="";
+  }
+  if( email == "" || (!emailpattern.test(email)))
+  {
+  document.getElementById("span2").innerHTML="Please enter Valid email ID";
+  document.getElementById("span2").style.color="red";
+  document.getElementById("span2").style.fontsize="1.2vw";
+  }
+  else
+  {
+  document.getElementById("span2").innerHTML="";
+  }
+  if( adrs == "" || (!adrspattern.test(adrs)))
+  {
+  document.getElementById("span3").innerHTML="Please enter Valid address";
+  document.getElementById("span3").style.color="red";
+  document.getElementById("span3").style.fontsize="1.2vw";
+  }
+  else
+  {
+  document.getElementById("span3").innerHTML="";
+  }
+  if( city == "" || (!namepattern.test(city)))
+  {
+  document.getElementById("span4").innerHTML="Please enter your City";
+  document.getElementById("span4").style.color="red";
+  document.getElementById("span4").style.fontsize="1.2vw";
+  }
+  else
+  {
+  document.getElementById("span4").innerHTML="";
+  }if( state == "" || (!namepattern.test(state)))
+  {
+  document.getElementById("span5").innerHTML="Please enter your State";
+  document.getElementById("span5").style.color="red";
+  document.getElementById("span5").style.fontsize="1.2vw";
+  }
+  else 
+  {
+  document.getElementById("span5").innerHTML="";
+  alert("You will be prcoeeded to Payment Page !!!");
+  window.location.href="../payment.html"
+}
+
+
+  
+}
 
