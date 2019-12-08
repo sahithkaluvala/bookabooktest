@@ -15,7 +15,10 @@ header{
     display:flex;
     justify-content:space-between;
 }
-    
+   
+#feedback_link{
+    text-decoration: none;
+}
 header #logo{
     width: 250px;
     height:80px;

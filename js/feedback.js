@@ -79,15 +79,15 @@
 
   window.onload = function(){
     console.log("Inside Function");
-    var retrievedObject = sessionStorage.getItem('feedbacks');
+    var retrievedObject = JSON.parse(sessionStorage.getItem('feedbacks'));
     
 
-    console.log('retrievedObject: ', JSON.parse(retrievedObject)); 
-    if(!(JSON.parse(retrievedObject)== null))
-      document.getElementById("box").innerHTML=`<span> Hi \' ${fname.value} \' your form is already submitted <span>` ; 
-    
-
-  }
+    console.log('retrievedObject: ',(retrievedObject.email)); 
+    if((retrievedObject))
+      document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.fn} ${retrievedObject.ln} 
+       \, your feedback is received from\' ${retrievedObject.email} \' , Thanks !!<span>
+       ` ; 
+      }
   
  
   function validateForm(){
@@ -151,7 +151,7 @@ else {
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
       feedbackstore.email=emailId.value;
-    document.getElementById("box").innerHTML=`<span> Hi \' ${firstname.value} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :  \ ${feedback.value} \ <span>`   ;  
+    document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :  \ ${feedback.value} \ <span>`   ;  
     document.getElementById("box").firstChild.style.color="blue";   
     document.getElementById("box").firstChild.style.fontsize="90px";
 
