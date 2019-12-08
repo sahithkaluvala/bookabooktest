@@ -1,0 +1,1279 @@
+
+.item {
+    background-color: white;
+    margin-bottom: 2%;
+} 
+
+.item img {
+    width:94%;
+    height: 250px;
+    padding:3%
+}
+
+.item span {
+    text-align: center;
+    color:rgb(229,31,11);
+    display:block;
+}
+
+.item span a {
+    cursor: pointer;
+}
+
+.item span a:hover{
+    text-decoration: underline;
+}
+
+.text-bold {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.text-light {
+    font-size: 0.8em;
+    font-weight: light;
+}
+
+.item-name {
+    font-size: 30px;
+    font-weight:600;
+    margin-top:1.5%;
+    margin-bottom: 0.3%;
+
+}
+
+.item-rating {
+    font-size:12px;
+    color:rgb(44, 99, 202);
+}
+
+.item-image-series {
+    margin-top:6%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.item-image {
+    width:80%;
+}
+
+.line-spacing {
+    margin:2% 0%;
+}
+
+.item-overall-rating {
+    font-size:40px;
+    font-weight: 800;
+}
+
+
+.item-main {
+    background-color: white !important;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .header-nav {
+        padding:0 0% 2% 4%;
+        font-size:16px;
+    }
+
+    .item-image-series {
+        margin-top:4%;
+    }
+
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    header {
+        display:flex;
+    }
+ 
+    .header-image {
+        padding:0%;
+    }
+
+    .header-nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding:0%;
+        font-size:16px;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    
+    .item {
+        width:40%;
+    }
+
+    .item-image-series {
+        margin-top:2%;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+
+    header {
+        display:flex;
+    }
+ 
+    .header-image {
+        padding:0%;
+    }
+
+    .header-nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding:0%;
+        font-size:18px;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    
+    .item {
+        width:30%;
+    }
+
+    .item-image-series {
+        margin-top:2%;
+    }
+
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+    
+    header {
+        display:flex;
+    }
+ 
+    .header-image {
+        padding:0%;
+    }
+
+    .header-nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding:0%;
+        font-size:18px;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    
+    
+    .item {
+        width:30%;
+    }
+
+    .item-image-series {
+        margin-top:2%;
+    }
+}
+
+
+
+   /* @media screen and (min-width: 760px)  {
+    html,body {
+        width:100%;
+        height:100%;
+        margin:0%;
+        padding: 0%;
+    }
+ 
+     header {
+        width:100%;
+        height:20%;
+     }
+ 
+     header h1 {
+         margin-bottom: 0%;
+         padding-left: 5%;
+     }
+
+     nav li a {
+        font-size: 1.0em;
+    }
+
+    .item {
+        width:40%;
+    }
+}
+
+
+  @media screen and (min-width: 1080px) {
+
+    html,body {
+        width:100%;
+        height:100%;
+        margin:0%;
+        padding: 0%;
+    }
+    
+    header {
+        width:100%;
+        height:10%;
+    }
+    
+    h1 {
+        width:30%;
+        padding:1% 0 0 5%;
+        margin-top:0%;
+        float:left;
+    }
+    
+    #header-right {
+        width:65%;
+        float:right;
+    }
+    
+    #header-right ul {
+        width:95%;
+        float:right;
+        list-style-type: none;
+        padding-right: 4%;
+        padding-top:1%;
+    }
+    
+    #header-right ul li {
+        float: right;
+    }
+    
+    #header-right ul li a {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .list-item-2, .list-item-3 {
+        padding-right:20%;
+    }
+
+    nav {
+        width:20%;
+        clear:both;
+        float: left;
+    }
+    
+    
+    
+    nav li {
+        padding-top:3%;
+        list-style-type: none;
+    }
+    
+    nav li a {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    nav li a:active {
+        color:rgb(44, 99, 202);
+    }
+    
+    nav li a:hover {
+        color:rgb(113, 139, 187);    
+    }
+    
+    .sub-nav {
+        padding-top:4%;
+        font-size: 0.8em;
+    }
+
+    main {
+        float: left;
+        width:80%;
+    }
+
+    .item {
+        width:30%;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

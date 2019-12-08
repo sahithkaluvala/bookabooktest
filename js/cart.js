@@ -76,4 +76,18 @@ calTotal()
      console.log(sum)
      document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
  }
+ $("#pay").click(function(e){
+  e.preventDefault();
+  console.log("function called");
+  var err=document.createElement("span");
+  err.innerHTML=`Please fill element`
+  if(document.getElementById("fname").value==''){
+    document.getElementById("fname").appendChild(err)
+  }
+});
+document.getElementById("pay").addEventListener('click', function(e){
+e.preventDefault();
+console.log("function called");
 
+}
+)
