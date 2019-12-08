@@ -74,7 +74,22 @@
   let $ = function(id)
   {
   return document.getElementById(id);
+  
+  };
+
+  window.onload = function(){
+    console.log("Inside Function");
+    var retrievedObject = sessionStorage.getItem('feedbacks');
+    
+
+    console.log('retrievedObject: ', JSON.parse(retrievedObject)); 
+    if(!(JSON.parse(retrievedObject)))
+      document.getElementById("box").innerHTML=`<span> Hi \' ${fname.value} \' your form is already submitted <span>` ; 
+    
+
   }
+  
+ 
   function validateForm(){
   let firstname = $('fname');
   let lastname = $('lname');
@@ -83,6 +98,12 @@
 
   let namepattern = /^[a-zA-Z]{2,12}$/;
   let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+  let feedbackstore={
+    'fn': '',
+    'ln': '',
+    'email':'',
+    'feedbackstr':''
+  }
 
   if(firstname.value == "")
   {
@@ -95,6 +116,10 @@
   document.getElementById("span1").style.fontsize="1.2vw";
   
 }
+else {
+  document.getElementById("span1").innerHTML="";
+  feedbackstore.fn=firstname.value;
+}
   if (lastname.value == "")
   {
   document.getElementById('span2').innerHTML='Please Enter Your Last Name';
@@ -104,6 +129,10 @@
   document.getElementById("span2").style.color="red";
   document.getElementById("span2").style.fontsize="1.2vw";
   
+}
+else {
+  feedbackstore.ln=lastname.value;
+  document.getElementById("span2").innerHTML="";
 }
   if(emailId.value == ""){        
   //firstname.nextElementSibiling.innerHTML='Please enter firstname';
@@ -115,8 +144,22 @@
   document.getElementById("span3").style.fontsize="1.2vw";
   
 }
-  else{            
+  else{ 
+     
+    document.getElementById("span3").innerHTML="";
+    feedbackstore.feedbackstr=document.getElementById("feedback").value;
+         if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
+      feedbackstore.email=emailId.value;
+    document.getElementById("box").innerHTML=`<span> Hi \' ${firstname.value} \' your form is submitted <span>` ;  
+    document.getElementById("box").firstChild.style.color="blue";   
+    document.getElementById("box").firstChild.style.fontsize="90px";
+    console.log(feedbackstore);
+    sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
+    console.log()
+     
+    
+    }
   }
 
   }
