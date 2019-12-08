@@ -50,7 +50,6 @@ span[id='errormessage']{
 
 }
 
-
 /* Home page footer styling */
 #footer{
      display: flex;
@@ -82,6 +81,7 @@ span[id='errormessage']{
     float: none;
 }
 #ccpayment input[type=text]:focus{
+    padding: 10px;
     border: 2px solid #555;
     box-sizing: border-box;    
 }

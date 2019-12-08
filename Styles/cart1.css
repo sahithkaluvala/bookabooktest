@@ -6,22 +6,30 @@
     align-content: center;
 }
 #wrapper div {
-    background-color: rgb(233, 219, 158);
+    background-color: rgb(253, 229, 161);
     float: left;
-    width: 40%;
+    width: 35.5%;
     margin: 5%;
     padding-right:10px;
-
-       
+    border-radius: 10px;       
 }
+
+#shippingaddress #payment_init{
+    font-weight: bold;
+}
+
 .container ul li a{
     text-decoration: none;
-    
-
 }
+
+
 .container ul li{
+padding: 20px;
 border: .5px solid rgb(134, 127, 127);
 margin: 2px;
+margin-right: 20px;
+border-radius: 10px;
+margin-bottom: 12px;
 }
 .container ul {
 list-style-type: none;
@@ -36,5 +44,56 @@ list-style-type: none;
     justify-content: start;
 }
 #shippingaddress label{
-    width: 100vm;
+    margin-left: 3.2vw;
+}
+
+#shippingaddress input{
+    margin-left: 3.2vw;
+    margin-right: 15vw;
+    font-weight: bold;
+    width: 10vw;
+    height: 30px;
+}
+
+
+ul li img{
+    height: 3.9vw;
+    width: 4.4vw;
+    float: right;
+    margin-right:20px;
+}
+
+main h1{
+    color: black;
+    text-align: center; 
+    color: black;
+    text-shadow: 5px 5px 14px rgb(163, 161, 161);
+    letter-spacing: 1.9px;
+}
+
+#wrapper{
+    font-weight: bold;
+    margin-left: 8vw;
+}
+
+.price>input[type='button']{
+    
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.price>input[type='number']{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#shippingaddress{
+margin-right: 22vw;
+}
+
+ul li a{
+    font-family: PT sans;
+    color: brown;
+    font-weight: bold;
+
 }
