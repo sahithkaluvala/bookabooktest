@@ -83,7 +83,7 @@
     
 
     console.log('retrievedObject: ', JSON.parse(retrievedObject)); 
-    if(!(JSON.parse(retrievedObject)))
+    if(!(JSON.parse(retrievedObject)== null))
       document.getElementById("box").innerHTML=`<span> Hi \' ${fname.value} \' your form is already submitted <span>` ; 
     
 
@@ -151,9 +151,10 @@ else {
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
       feedbackstore.email=emailId.value;
-    document.getElementById("box").innerHTML=`<span> Hi \' ${firstname.value} \' your form is submitted <span>` ;  
+    document.getElementById("box").innerHTML=`<span> Hi \' ${firstname.value} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :  \ ${feedback.value} \ <span>`   ;  
     document.getElementById("box").firstChild.style.color="blue";   
     document.getElementById("box").firstChild.style.fontsize="90px";
+
     console.log(feedbackstore);
     sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
     console.log()

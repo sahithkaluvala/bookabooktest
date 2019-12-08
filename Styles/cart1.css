@@ -85,6 +85,7 @@ main h1{
 .price>input[type='number']{
     margin-left: 10px;
     margin-right: 10px;
+    
 }
 
 #shippingaddress{
