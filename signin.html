@@ -5,10 +5,12 @@
 <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 <link  href="/Styles/main.css" rel="stylesheet">   
 <link href="/Styles/signin.css" rel="stylesheet">
-<script src="../js/signin.js" ></script>
-<title>Sign in</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="js/signin.js" ></script>
+<title>Sign Up</title>
 </head>
 
+<!--Body part start-->
 <body>
 <div class="flex-container">
 <header>
@@ -37,40 +39,45 @@
     </ul>
 </nav>
 
-
+        <!--Main part start-->
         <main><br><br>
         
-
+            <!--Creating  sing up form-->
             <form name="cform" method="GET">
                 <div class="main_two">
                     <p float="center"><span style="color:#eb8c10;">SIGN IN</span></p>
                     <label for="fname"><b>Firstname</b></label>
                     <input type="text" placeholder="Enter Firstname" id="fname" >
-                    <br><br><br>
+                    <div id="dom"></div>
+                    <br><br>
                     <label for="lname"><b>Lastname</b></label>
                     <input type="text" placeholder="Enter Lastname" id="lname" >
-                    <br><br><br>
+                    <div id="doml"></div>
+                    <br><br>
                     <label for="email"><b>Email</b></label><br>
-                    <input type="email" placeholder="Enter Email" id="email"  >
+                    <input type="email" placeholder="Enter Email" id="mail"  >
+                    <div id="dom1"></div>
                     <br><br><br>
                     <p >Gender</p>
                     <label for="Female"><b>Female</b></label>
-                    <input type="radio" name="Female" id= check >
+                    <input type="radio" name="Female" class= check >
                     <label for="Male"><b>Male</b></label>
-                    <input type="radio" name="Male"  id= check>
-                    
+                    <input type="radio" name="Male"  class= check>
+                    <div id="domc"></div>
                     <br><br><br> 
                     <label for="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" id="psw" >
+                    <div id="domp"></div>
                     <br><br><br>
-                    <button type="submit" onclick="v()">Submit</button>
+                    <button type="button" onsubmit="v()" id="add">Submit</button>
                     <br><br><br>
                     
                 </div>    
             </form>
         </main>
+        <!--Main part end-->
 
-
+        <!--Footer part start-->
         <footer>
             <nav id="bottombar">
                 <ul>
@@ -97,6 +104,8 @@
         </div>
          <span style="color: aliceblue; font-family: 'PT Sans', sans-serif;">&copy; 2019 Bookabook .All Rights Reserved.</span>
         </footer>
-        
+        <!--Footer part start-->
+
         </body>
+        <!--Body part end-->
         </html>
