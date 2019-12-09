@@ -1,0 +1,90 @@
+
+main{
+    padding-top: 30px;
+}
+#box1{
+    
+    height: 700px;
+    width: 800px;
+    background:black;
+    border-radius: 10px;
+    margin:auto;
+    margin-top:50px;
+    box-shadow: 4px 4px 4px 4px black;
+
+    color:rgb(252, 138, 8);
+    padding:20px;
+    font-size: 20px;
+}
+#start{
+    padding-left:60px;
+    padding-right:60px;
+}
+#btn{
+    color:rgb(236, 130, 9);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    
+    margin-left: 370px;
+}
+#fd,#id{
+    height: 30px;
+    margin: 20px;
+    width: 290px;
+    margin-left: 280px;
+}
+#enter{
+    margin-left: 330px;
+    font-size: 22px;
+}
+
+.p1{
+    color: brown;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    color:rgb(36, 11, 65);
+    text-align: center;
+}
+
+p{
+    font-weight: bold;
+    color:rgb(255, 169, 71);
+}
+
+main li{
+ font-style: italic;
+}
+
+main{
+    background: url(../images/background.jpg);
+    width:1340px;
+    height: 850px;
+}
+
+main h4{
+    font-weight: 16px;
+    font-style: italic;
+    font-weight: 100;
+    color: red;
+}
+input{
+    border: 2px solid green;
+    border-radius: 4px;
+}
+ input[type=text]:focus {
+    border: 2px solid #555;
+    box-sizing: border-box;
+
+
+  }
+  input::placeholder {
+    opacity: 0.4;
+    color: gray;
+
+
+  }

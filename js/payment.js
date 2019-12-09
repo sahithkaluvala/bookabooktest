@@ -136,10 +136,4 @@
 
     }
 */
-let books ={
-     name: 'sahith',
-     price: '14$',
-     descirption: 'e,ksdhkvf,ddvbajdhvvuchedakfsgckugeadgcujageds'
-}
-
-console.log(books.name)
+    
