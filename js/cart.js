@@ -18,7 +18,7 @@ xhr.onload = function(){
             
               
               <li>
-              <a href="../Product.html"> ${item.name} <img id='book${count}' src="${item.imgSrc}" alt='book${count}' height="59px" width="30px" ></a> 
+              <a href="Product.html"> ${item.name} <img id='book${count}' src="${item.imgSrc}" alt='book${count}' height="59px" width="30px" ></a> 
               <span class="price"> <input type="button" value="+" onclick="up(10,'qty${count}',${item.price})"> <input value="1" disabled type="number" id="qty${count}" size="1"  value="${item.qty}" min="0"><input type="button" value="-" onclick="down('0','qty${count}',${item.price})"><span class="totals" id="finalPrice${count}">$${item.price}</span></span>
           </li>
           `;
@@ -141,7 +141,7 @@ function cartForm(){
   {
   document.getElementById("span5").innerHTML="";
   alert("You will be prcoeeded to Payment Page !!!");
-  window.location.href="../payment.html"
+  window.location.href="payment.html"
 }
 
 
