@@ -89,7 +89,6 @@ document.getElementById("pay").addEventListener('click', function(e){
 e.preventDefault();
 console.log("function called");
 
-<<<<<<< HEAD
 function cartForm(){
   
   let fname= document.getElementById("fname").value;
@@ -158,7 +157,3 @@ function cartForm(){
   
 }
 
-=======
-}
-)
->>>>>>> 26b663111a953588876f2de55e032de439ce95cd

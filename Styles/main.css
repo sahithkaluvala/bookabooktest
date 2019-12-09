@@ -97,6 +97,11 @@ header #logo{
   }
   
 
+  nav #cartpic{
+    margin-top:15px;
+    width: 50px;
+    height: 40px;
+}
 #menubar ul li a{
     text-decoration: none;
     display: inline-block;
