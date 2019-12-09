@@ -76,18 +76,6 @@ calTotal()
      console.log(sum)
      document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
  }
- $("#pay").click(function(e){
-  e.preventDefault();
-  console.log("function called");
-  var err=document.createElement("span");
-  err.innerHTML=`Please fill element`
-  if(document.getElementById("fname").value==''){
-    document.getElementById("fname").appendChild(err)
-  }
-});
-document.getElementById("pay").addEventListener('click', function(e){
-e.preventDefault();
-console.log("function called");
 
 function cartForm(){
   
@@ -96,9 +84,9 @@ function cartForm(){
   let adrs= document.getElementById("adr").value;
   let city= document.getElementById("city").value;
   let state= document.getElementById("state").value;
-  let namepattern = /^[a-zA-Z]{2,12}$/;
+  let namepattern = /^[a-zA-Z\. ]{2,42}$/;
   let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
-  let adrspattern = /^[a-zA-Z]{5,30}$/;
+  let adrspattern = /^[0-9]{1,4}(([\-\/][0-9]{1,4})|(\/[ABCDFGHJKLMNPRSTV]{1,2}))*/;
 
 
   if( fname == "" || (!namepattern.test(fname)))
@@ -156,4 +144,3 @@ function cartForm(){
 
   
 }
-

@@ -20,10 +20,38 @@ main{
 h2
 {   
     font-weight: 10vw;
-    color:#ff9100;
+    color:white;
     text-align: center;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
 }
 
+
+@-webkit-keyframes example {
+    0% {
+      background:  #fdaf48;
+      
+    }
+    25% {
+      background: #e0a761;
+      
+    }
+    50% {
+      background: #f1cc9a;
+      
+    }
+    75% {
+      background: #e0a761;
+      
+    
+    }
+    100% {
+      background: #fdaf48;
+      
+    }
+  }
 p{
     font-weight: bold;
     color:#fbc988;
