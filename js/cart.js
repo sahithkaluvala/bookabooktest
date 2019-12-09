@@ -65,6 +65,7 @@ if (document.getElementById(qty).value <= parseInt(min)) {
 document.getElementById(tPrice).innerHTML=`$${document.getElementById(qty).value*price}`;
 calTotal()
 }
+
  function calTotal(){
      let temp=document.getElementsByClassName("totals");
      let sum=0;
@@ -75,7 +76,9 @@ calTotal()
      }
      console.log(sum)
      document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
+     localStorage.setItem('Total', JSON.stringify(sum));
  }
+
 
 function cartForm(){
   
@@ -144,3 +147,9 @@ function cartForm(){
 
   
 }
+window.onload = function() {
+  this.calTotal();
+};
+document.onload = function() {
+  this.calTotal();
+};

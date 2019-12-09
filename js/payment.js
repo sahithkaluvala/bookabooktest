@@ -139,3 +139,10 @@ else
 
 }
 */
+window.onload = function() {
+    console.log
+    document.getElementById("paymentmessage").textContent="your payment for $"+JSON.parse(localStorage.getItem('Total'));
+    document.getElementById("paymentmessage").style.color="green"
+    document.getElementById("paymentmessage").style.fontSize="30px"
+    document.getElementById("paymentmessage").style.float="left"
+};
