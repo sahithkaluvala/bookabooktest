@@ -23,6 +23,29 @@ header #logo{
     width: 250px;
     height:80px;
 }
+#footer{
+    display: flex;
+   flex-direction: row;
+   font-size: large;
+   align-content: space-around;
+   justify-content: space-around;
+}
+#footer ul{
+   text-decoration: none;
+}
+#footer ul li {
+   list-style: none;
+   color: white;
+}
+#footer ul li a{
+   text-decoration: none;
+}
+
+
+#faviconsfooter{
+   
+   vertical-align: bottom;
+}
 #login{
     float: right;
     display: block;
@@ -239,15 +262,28 @@ transition: background-color 0.6s ease;
     width: 65vw;
     height: 26vw;
 }
-main img{
-    
-    width: 65vw;
-    margin-top: 2vw;
-    height: 32vw;
-    margin-left: 6vw;
-    border-radius: 10px;
-    padding: 1em;
-    border-radius: 2em;
+#footer{
+    display: flex;
+   flex-direction: row;
+   font-size: large;
+   align-content: space-around;
+   justify-content: space-around;
+}
+#footer ul{
+   text-decoration: none;
+}
+#footer ul li {
+   list-style: none;
+   color: white;
+}
+#footer ul li a{
+   text-decoration: none;
+}
+
+
+#faviconsfooter{
+   
+   vertical-align: bottom;
 }
 
 #img22{
