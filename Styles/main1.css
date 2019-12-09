@@ -36,7 +36,12 @@ header #logo{
 #login:hover{
     color: white;
 }
-    
+
+nav #cartpic{
+    margin-top:15px;
+    width: 50px;
+    height: 40px;
+}
 
 /* CSS for menu bar */
 
