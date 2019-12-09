@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 console.log(window.location.href.split("/")[3]);
-xhr.open('GET', '../json/cart.json', true);
+xhr.open('GET', 'json/cart.json', true);
 
 xhr.onload = function(){
   if(this.status === 200) {
