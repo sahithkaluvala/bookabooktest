@@ -17,17 +17,18 @@
 
 <nav id="menubar">
     <ul>
-        <li class="list"><a href="category.html">Category</a>
+        <li class="list"><a href="#">Category</a>
         <ul  class="catt">
-            <li><a href="Teen.html"> Teen</a></li>
-            <li><a href="Youth.html"> Youth</a></li>
-            <li><a href="Scitizen.html"> Senior  Citizen</a></li>
+            <li><a href="teen.html"> Teen</a></li>
+            <li><a href="#"> Youth</a></li>
+            <li><a href="#"> Senior  Citizen</a></li>
         </ul>
         </li>
 
         <li><a href="product.html">Products </a></li>
         <li><a href="Activity.html">Account Activity </a></li>
-        <li id="payment_menu"> <a href="payment.html">Payment</a></li>
+        <li><a href="Tracking.html">Tracking </a></li>
+       
         <li id="searchbox_input">
             <input type="text" placeholder="Search for books & authors.."   >
         </li>
@@ -41,9 +42,9 @@
   
     <div id=wrapper>
         <div id="leftbar">
-            <p><a href="" class="leftlink">Children's book</a></p>
-            <p><a href="" class="leftlink">Teen's book</a></p>
-            <p><a href="" class="leftlink">Senior's book</a></p>
+            <p><a href="#" class="leftlink">Children's book</a></p>
+            <p><a href="teens.html" class="leftlink">Teen's book</a></p>
+            <p><a href="#" class="leftlink">Senior's book</a></p>
         </div>
         <div id="faqs">
            <h1>Frequently Asked Questions</h1>
@@ -69,7 +70,7 @@
             <p id="terms"><a href="terms.html">Terms and Conditions </a></p>
         </div>  
         <div id=returnbook>
-            <p id="return"> <a href="return.html">Return a Book </a> </p><br>
+            <p id="return"> <a href="#">Return a Book </a> </p><br>
             <p id="return_text"><img id="return_text1" src="images/quoted.png" alt='return'> &nbsp;Return your favourite books at your own ease!&nbsp;&nbsp;
                 <img id="return_text2" src="images/quote.png" alt='return' > </p>
         </div>
@@ -93,44 +94,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-   <script>
-        "use strict";
-
-        $(document).ready(function(){
-        
-            $.getJSON('json/FAQ.json',function(data){
-                $.each (data.FAQ,function(key,value){
-                    let question="";
-                    question ='<h2><a href="#">'+ value.question+'</a></h2>'+' <div class="Answer">';
-                   // console.log(value.question);
-                    let temp="";
-                    for( let i=0;i<value.answer.length;i++)
-                    {
-                    temp+='<p>'+value.answer[i]+'</p>'                  
-                    }
-                    let end="</div>";
-                    console.log( question + temp+end);
-                      $('#faq').append(
-                        question + temp + end    
-                     );
-                });
-         
-                $("#faq h2").click(function(evt) {
-                    $(this).toggleClass("minus");
-                    if ($(this).attr("class") !== "minus") {
-                        $(this).next().hide();
-                    }
-                    else {
-                        $(this).next().show();
-                    }
-                    evt.preventDefault();
-                }); // end click
-                $("#faqs").find("a:first").focus();
-
-            }) ;
-        
-        });
-        </script>  
+   <script src='js/FAQ.js'>  </script>  
 
 
 </body>
