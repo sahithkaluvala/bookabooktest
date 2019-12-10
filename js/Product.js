@@ -1,7 +1,7 @@
 "use strict";
 $(document).ready(function(){
 
-    $.getJSON('../json/Product.json',function(data){
+    $.getJSON('json/Product.json',function(data){
         let s1="images/products/";
         s1+=data.Products[0].image;
         $('#book1').attr('src',s1);
