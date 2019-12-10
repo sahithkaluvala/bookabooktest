@@ -24,7 +24,7 @@
 
     "Availablity" :"YES",
 
-    "url":"/images/luck.jpg",
+    "url":"images/luck.jpg",
 
     "book1":"Book"
         },
@@ -54,7 +54,7 @@
         
     "Availablity" :"YES",
         
-    "url":"/images/war.jpg",
+    "url":"images/war.jpg",
         
     "book1":"Book"
 },
@@ -84,7 +84,7 @@
                 
     "Availablity" :"YES",
                 
-    "url":"/images/door.jpg",
+    "url":"images/door.jpg",
                 
     "book1":"Book"
                         }

@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 console.log(window.location.href.split("/")[3]);
-xhr.open('GET', '../json/cart.json', true);
+xhr.open('GET', 'json/cart.json', true);
 
 xhr.onload = function(){
   if(this.status === 200) {
@@ -18,7 +18,7 @@ xhr.onload = function(){
             
               
               <li>
-              <a href="../Product.html"> ${item.name} <img id='book${count}' src="${item.imgSrc}" alt='book${count}' height="59px" width="30px" ></a> 
+              <a href="Product.html"> ${item.name} <img id='book${count}' src="${item.imgSrc}" alt='book${count}' height="59px" width="30px" ></a> 
               <span class="price"> <input type="button" value="+" onclick="up(10,'qty${count}',${item.price})"> <input value="1" disabled type="number" id="qty${count}" size="1"  value="${item.qty}" min="0"><input type="button" value="-" onclick="down('0','qty${count}',${item.price})"><span class="totals" id="finalPrice${count}">$${item.price}</span></span>
           </li>
           `;
@@ -65,6 +65,7 @@ if (document.getElementById(qty).value <= parseInt(min)) {
 document.getElementById(tPrice).innerHTML=`$${document.getElementById(qty).value*price}`;
 calTotal()
 }
+
  function calTotal(){
      let temp=document.getElementsByClassName("totals");
      let sum=0;
@@ -75,7 +76,9 @@ calTotal()
      }
      console.log(sum)
      document.getElementById("totPrice").innerHTML=`Total Cart Value : $${sum}`;
+     localStorage.setItem('Total', JSON.stringify(sum));
  }
+
 
 function cartForm(){
   
@@ -138,9 +141,15 @@ function cartForm(){
   {
   document.getElementById("span5").innerHTML="";
   alert("You will be prcoeeded to Payment Page !!!");
-  window.location.href="../payment.html"
+  window.location.href="payment.html"
 }
 
 
   
 }
+window.onload = function() {
+  this.calTotal();
+};
+document.onload = function() {
+  this.calTotal();
+};
