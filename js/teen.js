@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    $.getJSON('../json/teen.json', function(data) {
+    $.getJSON('json/teen.json', function(data) {
       $.each(data.book, function(key, value) {
         $('.book1').append(
             //further values will be appended to respective HTML content
