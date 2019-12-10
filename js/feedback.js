@@ -82,7 +82,7 @@
     var retrievedObject = JSON.parse(sessionStorage.getItem('feedbacks'));
     
 
-    console.log('retrievedObject: ',(retrievedObject)); 
+    //console.log('retrievedObject: ',(retrievedObject)); 
     if(!  (retrievedObject===null))
       document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.fn} ${retrievedObject.ln} 
        \, your feedback is received from\' ${retrievedObject.email} \' , Thanks !!<span>
