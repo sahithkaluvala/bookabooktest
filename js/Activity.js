@@ -3,7 +3,7 @@
 
 
 $(document).ready(function() {
-    $.getJSON('json/Activity.json', function(data) {
+    $.getJSON('../json/Activity.json', function(data) {
       $.each(data.bookno, function(key, value) {
         $('#team').append(
   
