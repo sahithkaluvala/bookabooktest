@@ -1,7 +1,7 @@
 
 
 main{
-    background: url(images/background.jpg);    
+    background: url(../images/background.jpg);    
     background: linear-gradient(to right,#fdaf48,white,#fdaf48);    
     margin-right: 2vw;
     padding:1vw 2vw 0vw 2vw;

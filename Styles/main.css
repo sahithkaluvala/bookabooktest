@@ -211,7 +211,7 @@ ul after{
 
 /* main is set with a background image*/
 main{
-    background: url(/images/background.jpg);
+    background: url(../images/background.jpg);
     
 }
 
