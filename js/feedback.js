@@ -82,8 +82,8 @@
     var retrievedObject = JSON.parse(sessionStorage.getItem('feedbacks'));
     
 
-    console.log('retrievedObject: ',(retrievedObject.email)); 
-    if((retrievedObject))
+    console.log('retrievedObject: ',(retrievedObject)); 
+    if(!  (retrievedObject===null))
       document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.fn} ${retrievedObject.ln} 
        \, your feedback is received from\' ${retrievedObject.email} \' , Thanks !!<span>
        ` ; 
@@ -151,7 +151,8 @@ else {
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
       feedbackstore.email=emailId.value;
-    document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :  \ ${feedback.value} \ <span>`   ;  
+      
+    document.getElementById("box").innerHTML=`<span> Hi \' ${feedbackstore.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :   ${feedback.value}  <span>`   ;  
     document.getElementById("box").firstChild.style.color="blue";   
     document.getElementById("box").firstChild.style.fontsize="90px";
 
