@@ -1,5 +1,5 @@
 *{
-  color: white;
+  color: black;
 }
 
 h1{
@@ -98,6 +98,12 @@ h1{
 
   }
 
+
+  main{
+    background: #ffd39a;
+    margin-left:20px ;
+    margin-right:20px ;
+  }
   
 
 
