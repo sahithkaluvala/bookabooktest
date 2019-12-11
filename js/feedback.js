@@ -83,14 +83,13 @@ else {
     document.getElementById("span3").innerHTML="";
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
-      feedbackstore.email=emailId.value;
+      Store.email=emailId.value;
       
-    document.getElementById("box").innerHTML=`<span> Hi \' ${feedbackstore.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :   ${feedback.value}  <span>`   ;  
+    document.getElementById("box").innerHTML=`<span> Hi \' ${Store.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :   ${Store.feedbackstr}  <span>`   ;  
     document.getElementById("box").firstChild.style.color="blue";   
     document.getElementById("box").firstChild.style.fontsize="90px";
 
-    console.log(feedbackstore);
-    sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
+    sessionStorage.setItem('feedbacks', JSON.stringify(Store));
     
     
 sessionStorage.setItem("feedbackStore", feedback.value );
@@ -115,3 +114,4 @@ Store.feedbackstr=sessionStorage.getItem("feedbackStore");
   }
 
   }
+}

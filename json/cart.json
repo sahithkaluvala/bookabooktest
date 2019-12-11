@@ -33,13 +33,7 @@
         "imgSrc":"images/a wedding on the beach.jpg",
         "productCode":"111005",
         "qty":1
-    },
-    {
-        "name": "Product 6",
-        "price": 9,
-        "imgSrc":"images/a wedding on the beach.jpg",
-        "productCode":"111006",
-        "qty":1
     }
+    
 
 ]

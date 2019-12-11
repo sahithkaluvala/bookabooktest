@@ -201,7 +201,6 @@ function cartForm(){
         document.getElementById("span7").innerHTML="";
         billingAddress.Sphone=phone;
         }
-        console.log(billingAddress)
 }
 
     window.onload = function() {

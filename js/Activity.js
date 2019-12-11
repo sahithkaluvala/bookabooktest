@@ -7,17 +7,13 @@ $(document).ready(function() {
       $.each(data.bookno, function(key, value) {
         $('#team').append(
   
-          'Book No: ' +
-            value.Bname +
+          'Book No: ' + value.Bname +
+            '<br>' + 
+            'Book Title: ' +  value.btitle +
             '<br>' +
-            'Book Title: ' +
-            value.btitle +
-            '<br>' +
-            'Book Summary: ' +
-            value.bsummary +
+            'Book Summary: ' +   value.bsummary +
             '<br>'+
-            'Book price: ' +
-            value.price +
+            'Book price: ' +    value.price +
             '<br><br>'
         );
       });
