@@ -83,7 +83,6 @@ else {
     document.getElementById("span3").innerHTML="";
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
-<<<<<<< HEAD
       feedbackstore.email=emailId.value;
       
     document.getElementById("box").innerHTML=`<span> Hi \' ${feedbackstore.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :   ${feedback.value}  <span>`   ;  
@@ -93,11 +92,6 @@ else {
     console.log(feedbackstore);
     sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
     
-=======
-  }
-   
-  
->>>>>>> b3bb00f777f5154fb423f4fa599928ea1fb00148
     
 sessionStorage.setItem("feedbackStore", feedback.value );
 Store.feedbackstr=sessionStorage.getItem("feedbackStore");

@@ -134,6 +134,7 @@ function cartForm(){
       {
       document.getElementById("span1").innerHTML="";
       billingAddress.SFullName=fname;
+      }
       if( validateEmail(email))
       {
       document.getElementById("span2").innerHTML="Please enter Valid email ID";
@@ -144,38 +145,31 @@ function cartForm(){
       {
        document.getElementById("span2").innerHTML="";
        billingAddress.Semail=email;
-       if( CanadaAddressValidation(adrs))
-       {
-       document.getElementById("span3").innerHTML="Please enter Valid address";
-       document.getElementById("span3").style.color="red";
-       document.getElementById("span3").style.fontsize="1.2vw";
        }
-       else
-       {       
-         document.getElementById("span3").innerHTML="";
-         billingAddress.SAddr=adrs;
-         if( CanadaCityValidation(city))
-         {
-         document.getElementById("span4").innerHTML="Please enter valid City";
-         document.getElementById("span4").style.color="red";
-         document.getElementById("span4").style.fontsize="1.2vw";
-         }
-         else
-         {
-           document.getElementById("span4").innerHTML="";
-           billingAddress.SCity=city;
-           if( validateName(state))
-           {
-           document.getElementById("span5").innerHTML="Please enter valid State";
-           document.getElementById("span5").style.color="red";
-           document.getElementById("span5").style.fontsize="1.2vw";
-           }
-           else 
-           {
-           document.getElementById("span5").innerHTML="";
-           billingAddress.SState=state;
-         //  window.location.href="payment.html"
-          
+      
+      if( CanadaAddressValidation(adrs))
+      {
+      document.getElementById("span3").innerHTML="Please enter Valid address";
+      document.getElementById("span3").style.color="red";
+      document.getElementById("span3").style.fontsize="1.2vw";
+      }
+      else
+      {       
+        document.getElementById("span3").innerHTML="";
+        billingAddress.SAddr=adrs;
+      }
+      console.log(city)
+      if( CanadaCityValidation(city))
+      {
+      document.getElementById("span4").innerHTML="Please enter valid City";
+      document.getElementById("span4").style.color="red";
+      document.getElementById("span4").style.fontsize="1.2vw";
+      }
+      else
+      {
+        document.getElementById("span4").innerHTML="";
+        billingAddress.SCity=city;
+      }
       if( validateName(state))
       {
       document.getElementById("span5").innerHTML="Please enter valid State";
@@ -187,7 +181,8 @@ function cartForm(){
       document.getElementById("span5").innerHTML="";
       billingAddress.SState=state;
     //  window.location.href="payment.html"
-    if(CanadaZipValidation(zip)){
+      }
+      if(CanadaZipValidation(zip)){
       document.getElementById("span6").innerHTML="please enter a valid ZIP";
       document.getElementById("span6").style.color="red";
       document.getElementById("span6").style.fontsize="1.2vw";
@@ -196,6 +191,7 @@ function cartForm(){
       document.getElementById("span6").innerHTML="";
       console.log("zip")
       billingAddress.SZip=zip;
+      }
       if(validatePhone(phone)){
         document.getElementById("span7").innerHTML="please enter a valid phone";
         document.getElementById("span7").style.color="red";
@@ -204,30 +200,9 @@ function cartForm(){
         else{
         document.getElementById("span7").innerHTML="";
         billingAddress.Sphone=phone;
-          window.location.href="payment.html"
-          localStorage.setItem('shippingaddress', JSON.stringify(billingAddresss));
-
-
         }
         console.log(billingAddress)
 }
-      }
-
-      }
-           }
-         }
-       }
-
-       }
-
-      }
-      
-      
-     
-     // console.log(city)
-     
-      
-     
 
     window.onload = function() {
       calTotal();
