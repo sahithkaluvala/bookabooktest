@@ -1,28 +1,29 @@
-# Bookabook
+# [Bookabook]
+
+###### Deployed at : https://sahithkaluvala.github.io/bookabooktest/index.html
+-----
 ----
 Team Members:
-
 -	Sahith Reddy Kaluvala 
---Cart
---Payment
---contactus
---search
-
+--[Cart]
+--[Payment]
+--[contactus]
+--[search]
 -	Yu liang
---product
---FAQ
---Donate
+--[product]
+--[FAQ]
+--[Donate]
 
 -	Charmi Bhatt
---SignUp/Login
---Account Activity
---Tracking
+--[SignUp/Login]
+--[Account Activity]
+--[Tracking]
 
 -	Sayali Mali
---Home
---Feedback
---Category
---Terms and Condition
+--[Home]
+--[Feedback]
+--[Category]
+--[Terms and Condition]
 
 
 ## DOMAIN NAME: bookabook.com
@@ -81,3 +82,21 @@ bookabook.com  Features :
 * Features Donators of book.
 ###### Help and FAQ’s   ( Yu Liang )
 * Customer Support for the queries.
+* 
+[Bookabook]: <https://sahithkaluvala.github.io/bookabooktest/Home.html>
+[Payment]:   <https://sahithkaluvala.github.io/bookabooktest/payment.html>
+[Cart]:   <https://sahithkaluvala.github.io/bookabooktest/cart.html>
+[contactus]: <https://sahithkaluvala.github.io/bookabooktest/contact.html>
+[search]:    <https://sahithkaluvala.github.io/bookabooktest/search.html>
+[product]:   <https://sahithkaluvala.github.io/bookabooktest/Product.html>
+[FAQ]:       <https://sahithkaluvala.github.io/bookabooktest/FAQ.html>
+[Donate]:    <https://sahithkaluvala.github.io/bookabooktest/Donation.html>
+[SignUp/Login]:  <https://sahithkaluvala.github.io/bookabooktest/signin.html>
+[Account Activity]:<https://sahithkaluvala.github.io/bookabooktest/Activity.html>
+[Tracking]:     <https://sahithkaluvala.github.io/bookabooktest/Tracking.html>
+[Home]:<https://sahithkaluvala.github.io/bookabooktest/Home.html>
+[Feedback]:<https://sahithkaluvala.github.io/bookabooktest/feedback.html>
+[Category]:<https://sahithkaluvala.github.io/bookabooktest/teen.html>
+[Terms and Condition]:<https://sahithkaluvala.github.io/bookabooktest/terms.html>
+
+
