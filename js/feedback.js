@@ -158,8 +158,7 @@ else {
 
     console.log(feedbackstore);
     sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
-    console.log()
-     
+    
     
     }
   }

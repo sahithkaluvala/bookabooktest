@@ -16,3 +16,7 @@ $(document).ready(function() {
       });
     });
   });
+  $('.button_class').click(function(){
+      console.log("func call")
+    window.location.href="Product.html?23143";
+    });  
