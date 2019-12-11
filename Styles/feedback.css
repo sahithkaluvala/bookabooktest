@@ -28,6 +28,16 @@ h2
     animation-duration: 4s;
 }
 
+#box span h4{
+  border-radius: 10px;
+  padding: 10px;
+  padding-right:5px;
+  padding-left:15px;
+  font-weight: bold;
+  background: linear-gradient(to right,#fdaf48,white,#fdaf48);
+  color: black;
+}
+
 
 @-webkit-keyframes example {
     0% {

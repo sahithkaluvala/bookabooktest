@@ -1,76 +1,3 @@
-
-
-/*
-<script>
-       function validateForm() {
-        var z=document.forms["contactcform"]["contactsubject"].value;
-        var w=document.forms["contactcform"]["contactmsg"].value;
-           var y=document.forms["contactcform"]["contactemail"].value;
-          var robo=document.forms["contactcform"]["robo"].value;
-  var x = document.forms["contactcform"]["contactname"].value;
-  let namepattern = /^[a-zA-Z]{2,12}$/;
-  let namepattern1 = /^[a-zA-Z]{2,20}$/;
-  let namepattern2 = /^[a-zA-Z]{2,50}$/;
-  let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/
-  if (x == "") {
-     document.getElementById("contactspn").innerHTML="Please enter your name";
-    document.getElementById("contactspn").style.color="red";
-    return false;
-  }
-  else if(!namepattern.test(x)){
-    document.getElementById("contactspn").innerHTML="Please enter Valid name";
-    document.getElementById("contactspn").style.color="red";
-     return false;
-     }
-  else if(y== ""){
-    document.getElementById("contactemailspn").innerHTML="Please enter your email ID";
-    document.getElementById("contactemailspn").style.color="red";
-    document.getElementById("contactemailspn").style.marginTop="6px";
-      return false;
-  }
-  else if(!emailpattern.test(y)){
-   document.getElementById("contactemailspn").innerHTML="Please enter your valid email";
-   document.getElementById("contactemailspn").style.color="red";
-   document.getElementById("contactemailspn").style.marginTop="6px";
-      return false;
-  }
-  else if(z== ""){
-    document.getElementById("contactsubjectspn").innerHTML="Please enter your subject";
-    document.getElementById("contactsubjectspn").style.color="red";
-    document.getElementById("contactsubjectspn").style.marginTop="6px";
-      return false;
-  }
-  else if(!namepattern1.test(z)){
-    document.getElementById("contactsubjectspn").innerHTML="Please enter Valid subject";
-    document.getElementById("contactsubjectspn").style.color="red";
-    document.getElementById("contactsubjectspn").style.marginTop="6px";
-     return false;
-     }
-     else if(w== ""){
-    document.getElementById("contactmsgspn").innerHTML="Please write a message";
-    document.getElementById("contactmsgspn").style.color="red";
-    document.getElementById("contactmsgspn").style.marginTop="6px";
-      return false;
-  }
-     else if(!namepattern2.test(w)){
-    document.getElementById("contactmsgspn").innerHTML="Please enter Valid message";
-    document.getElementById("contactmsgspn").style.color="red";
-    document.getElementById("contactmsgspn").style.marginTop="6px";
-
-     return false;
-     }
-     else if(!robo.checked){
-        document.getElementById("contactrobospn").innerHTML="Please check the box";
-    document.getElementById("contactrobospn").style.color="red";
-    document.getElementById("contactrobospn").style.marginTop="6px";
-         return false;
-     }
-     else{
-         alert("Form submmited");
-     }
-}
-   </script>
-   */
   let $ = function(id)
   {
   return document.getElementById(id);
@@ -78,27 +5,34 @@
   };
 
   window.onload = function(){
-    console.log("Inside Function");
-    var retrievedObject = JSON.parse(sessionStorage.getItem('feedbacks'));
     
-
-    console.log('retrievedObject: ',(retrievedObject.email)); 
-    if((retrievedObject))
-      document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.fn} ${retrievedObject.ln} 
-       \, your feedback is received from\' ${retrievedObject.email} \' , Thanks !!<span>
-       ` ; 
-      }
+    var retrievedObject = sessionStorage.getItem("feedbacks");
+    
+   let fname = sessionStorage.getItem("firstnameStore");
+   let lname = sessionStorage.getItem("lastnameStore");
+   let emailID = sessionStorage.getItem("emailStore");
+   let fb = sessionStorage.getItem("feedbackStore"); 
+     
+    if(!(retrievedObject == null))
+{
+  document.getElementById("box").innerHTML=`<span> Hi \' ${fname} \' your form already is submitted, Thank You <span><br><br><span>Email id : \ ${emailID} \</span><br><br><br><br><span style="color:#fdaf48;">Your Given Feedback    :<h4>  \ ${fb} \</h4> <span>`   ;  
+  document.getElementById("box").firstChild.style.color="#fdaf48";   
+  document.getElementById("box").firstChild.style.fontsize="90px";
+}
+  }
 
  
   function validateForm(){
-  let firstname = $('fname');
-  let lastname = $('lname');
-  let emailId = $('emailid');
-  let feedback = $('feedback');
+    let firstname = $('fname');
+    let lastname = $('lname');
+    let emailId = $('emailid');
+    let feedback = $('feedback');
+    console.log("startttt");
+  
 
   let namepattern = /^[a-zA-Z]{2,12}$/;
   let emailpattern=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
-  let feedbackstore={
+  let Store={
     'fn': '',
     'ln': '',
     'email':'',
@@ -118,7 +52,7 @@
 }
 else {
   document.getElementById("span1").innerHTML="";
-  feedbackstore.fn=firstname.value;
+  Store.fn=firstname.value;
 }
   if (lastname.value == "")
   {
@@ -131,7 +65,7 @@ else {
   
 }
 else {
-  feedbackstore.ln=lastname.value;
+  Store.ln=lastname.value;
   document.getElementById("span2").innerHTML="";
 }
   if(emailId.value == ""){        
@@ -147,20 +81,31 @@ else {
   else{ 
      
     document.getElementById("span3").innerHTML="";
-    feedbackstore.feedbackstr=document.getElementById("feedback").value;
          if(!(firstname.value===''||lastname.value===''||emailId.value===''))  {     
       alert("Hi  " + firstname.value +  "   Your Feedback is Submitted !!!!  ")
-      feedbackstore.email=emailId.value;
-    document.getElementById("box").innerHTML=`<span> Hi \' ${retrievedObject.email} \' your form is submitted <span><br><br><span style="color:rgb(120, 120, 197);"> Feedback    :  \ ${feedback.value} \ <span>`   ;  
-    document.getElementById("box").firstChild.style.color="blue";   
-    document.getElementById("box").firstChild.style.fontsize="90px";
-
-    console.log(feedbackstore);
-    sessionStorage.setItem('feedbacks', JSON.stringify(feedbackstore));
-    console.log()
-     
+  }
+   
+  
     
-    }
+sessionStorage.setItem("feedbackStore", feedback.value );
+Store.feedbackstr=sessionStorage.getItem("feedbackStore");
+  
+  sessionStorage.setItem("emailStore", emailId.value );
+  Store.email=sessionStorage.getItem("emailStore");
+  
+  sessionStorage.setItem("firstnameStore", firstname.value );
+  Store.fn=sessionStorage.getItem("firstnameStore");
+  
+  sessionStorage.setItem("lastnameStore", lastname.value );
+  Store.ln=sessionStorage.getItem("lastnameStore");
+  
+  
+  sessionStorage.setItem('feedbacks', JSON.stringify(Store));
+  
+  document.getElementById("box").innerHTML=`<span> Hi \' ${Store.fn} \' your form is submitted <span><br><br><span>Email id :  ${Store.email} </span><br><br><br><br><span style="color:#fdaf48;">Your Given Feedback    :<h4>  \ ${Store.feedbackstr} \</h4> <span>`   ;  
+  document.getElementById("box").firstChild.style.color="#fdaf48";   
+  document.getElementById("box").firstChild.style.fontsize="90px";
+
   }
 
   }
