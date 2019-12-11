@@ -14,10 +14,13 @@ function validateform(){
     let namepattern = /^[a-zA-Z]{2,30}$/;
     if (name.value == '')
         name.nextElementSibling.innerHTML='please enter name';
+        
+       
     else if (!namepattern.test(name.value))
         name.nextElementSibling.innerHTML='please enter letter only';
     else
         name.nextElementSibling.innerHTML='validate';
+      
     
     let email = document.getElementById('email');
     let emailpattern = /^\w([\.-]?\w+)*@\w([\.-]?\w+)*(\w{2,3})+$/;
@@ -44,6 +47,10 @@ function validateform(){
     if (!numofbookpattern.test(numofbook.value))
         numofbook.nextElementSibling.innerHTML='it is not valid';
     else 
-    numofbook.nextElementSibling.innerHTML='validate';
+    {numofbook.nextElementSibling.innerHTML='validate';
+    //localstorage.setItem('name',name);
+   //let result=localstorage.getItem('name');
+    alert("Thanks for you donation, we will contact you as soon as possible !!!");
+    }
 }
 
