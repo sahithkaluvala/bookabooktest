@@ -64,7 +64,7 @@ bookabook.com  Features :
 ###### Payment( after clicking on rent option in product page/account ) ( Sahith )
 * Modes of payment ( Credit/Debit/COD)
 * promo codes (n/a)
-###### Products (image of the Book, name of Book, buying option)  ( Yu liang) 
+###### Products html,css,json,js (image of the Book, name of Book, buying option)  ( Yu liang) 
 * precise details of a book( Cost, Review, ratings , year of publish, …)
 ###### Account Activity Info ( purchase history ) ( Charmi )
 * Recent purchases
@@ -75,12 +75,12 @@ bookabook.com  Features :
 * Helps to discover a book by interests ( Displays all books at a page according to search term
 ###### Tracking  ( Charmi  )
 * Tracks the book to be delivered
-###### Cart     ( Team )
+###### Cart ( Team )
 * Selected books will be listed.
 * Option to remove a book
-###### Donate  ( name of the book , address  to pick up , condition …) ( Yu Liang )
+###### Donate-html,css,js( Yu Liang )
 * Features Donators of book.
-###### Help and FAQ’s   ( Yu Liang )
+###### FAQ’s-html,css,json,js ( Yu Liang )
 * Customer Support for the queries.
 * 
 [Bookabook]: <https://sahithkaluvala.github.io/bookabooktest/Home.html>
